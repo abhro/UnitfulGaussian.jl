@@ -3,7 +3,11 @@ uuid = "203183ea-d3ea-452b-8588-590cbae10604"
 authors = ["Abhro R. and contributors"]
 version = "1.0.0-DEV"
 
+[deps]
+Unitful = "1986cc42-f94f-5a68-af5c-568840ba703d"
+
 [compat]
+Unitful = "1.21.0"
 julia = "1.6"
 
 [extras]
