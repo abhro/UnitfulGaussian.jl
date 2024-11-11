@@ -1,5 +1,8 @@
 module UnitfulGaussian
+import Unitful
 
-# Write your package code here.
+function __init__()
+    Unitful.register(UnitfulGaussian)
+end
 
 end
