@@ -17,3 +17,7 @@ makedocs(;
         "Closures" => "closures.md",
     ],
 )
+
+deploydocs(;
+    repo = "github.com/abhro/UnitfulGaussian.jl",
+)
