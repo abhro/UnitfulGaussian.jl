@@ -204,6 +204,7 @@ table td:last-child, table th:last-child { border-right: none !important; }
   <td class="dimensions">T L<sup>−2</sup> I</td>
   <td class="dimensions" colspan="2">T<sup>−1</sup> L<sup>−1/2</sup> M<sup>1/2</sup></td>
   <td class="dimensions"></td>
+  <td class="dimensions"></td>
 </tr>
 <tr class="odd">
   <td rowspan="2">Polarization density, <strong>P</strong></td>
@@ -241,12 +242,10 @@ table td:last-child, table th:last-child { border-right: none !important; }
   <td class="nowrap" colspan="2"><strong>Fr</strong></td>
   <td class="nowrap"></td>
   <td class="nowrap"></td>
-  <td class="nowrap"></td>
 </tr>
 <tr class="even">
   <td class="dimensions">T I</td>
   <td class="dimensions" colspan="2">T<sup>−1</sup> L<sup>3/2</sup> M<sup>1/2</sup></td>
-  <td class="dimensions"></td>
   <td class="dimensions"></td>
   <td class="dimensions"></td>
 </tr>
@@ -399,7 +398,6 @@ table td:last-child, table th:last-child { border-right: none !important; }
   <td class="dimensions" colspan="2">T<sup>−1</sup> L</td>
   <td class="dimensions"></td>
   <td class="dimensions"></td>
-  <td></td>
 </tr>
 <tr class="odd">
   <td rowspan="2">Resistivity, <em>ρ</em></td>
