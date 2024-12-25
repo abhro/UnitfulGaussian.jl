@@ -38,11 +38,11 @@ table td:last-child, table th:last-child { border-right: none !important; }
 <tr class="odd">
   <td rowspan="2">Force, <strong>F</strong></td>
   <td>
-    <span class="nowrap">newton (N)</span>
+    <span class="nowrap"><strong>newton (N)</strong></span>
     <span class="nowrap">= kg m s<sup>−2</sup></span>
   </td>
   <td colspan="4">
-    <span class="nowrap">dyne (dyn)</span>
+    <span class="nowrap"><strong>dyne (dyn)</strong></span>
     <span class="nowrap">= g cm s<sup>−2</sup></span>
   </td>
 </tr>
@@ -52,12 +52,12 @@ table td:last-child, table th:last-child { border-right: none !important; }
 <tr class="odd">
   <td rowspan="2">Energy, <em>E</em></td>
   <td>
-    <span class="nowrap">joule (J)</span>
+    <span class="nowrap"><strong>joule (J)</strong></span>
     <span class="nowrap">= N m</span>
     <span class="nowrap">= kg m<sup>2</sup> s<sup>−2</sup></span>
   </td>
   <td colspan="4">
-    erg
+    <strong>erg</strong>
     <span class="nowrap">= dyn cm</span>
     <span class="nowrap">= g cm<sup>2</sup> s<sup>−2</sup></span>
   </td>
@@ -68,12 +68,12 @@ table td:last-child, table th:last-child { border-right: none !important; }
 <tr class="odd">
   <td rowspan="2">Charge, <em>Q</em>,&nbsp;<em>q</em></td>
   <td>
-    <span class="nowrap">coulomb (C)</span>
+    <span class="nowrap"><strong>coulomb (C)</strong></span>
     <span class="nowrap">= A⋅s</span>
   </td>
   <td colspan="2">
-    <span class="nowrap">franklin (Fr)</span>
-    <span class="nowrap">= statcoulomb (statC)</span>
+    <span class="nowrap"><strong>franklin (Fr)</strong></span>
+    <span class="nowrap">= <strong>statcoulomb (statC)</strong></span>
     <span class="nowrap">= esu charge</span>
     <span class="nowrap">= dyn<sup>1/2</sup> cm</span>
     <span class="nowrap">= cm<sup>3/2</sup> g<sup>1/2</sup> s<sup>−1</sup></span>
@@ -96,19 +96,19 @@ table td:last-child, table th:last-child { border-right: none !important; }
 <tr class="odd">
   <td rowspan="2">Current, <em>I</em>,&nbsp;<em>j</em></td>
   <td>
-    <span class="nowrap">ampere (A)</span>
+    <span class="nowrap"><strong>ampere (A)</strong></span>
     <span class="nowrap">= C/s</span>
   </td>
   <td colspan="2">
     <span class="nowrap">Fr/s</span>
-    <span class="nowrap">= statampere (statA)</span>
+    <span class="nowrap">= <strong>statampere (statA)</strong></span>
     <span class="nowrap">= esu current</span>
     <span class="nowrap">= dyn<sup>1/2</sup> cm/s</span>
     <span class="nowrap">= cm<sup>3/2</sup> g<sup>1/2</sup> s<sup>−2</sup></span>
   </td>
   <td>
-    <span class="nowrap">biot (Bi)</span>
-    <span class="nowrap">= abampere (abA)</span>
+    <span class="nowrap"><strong>biot (Bi)</strong></span>
+    <span class="nowrap">= <strong>abampere (abA)</strong></span>
     <span class="nowrap">= emu current</span>
     <span class="nowrap">= dyn<sup>1/2</sup></span>
     <span class="nowrap">= cm<sup>1/2</sup> g<sup>1/2</sup> s<sup>−1</sup></span>
@@ -137,12 +137,12 @@ table td:last-child, table th:last-child { border-right: none !important; }
 <tr class="odd">
   <td rowspan="2">Potential/voltage, <em>V</em></td>
   <td>
-    <span class="nowrap">volt (V)</span>
+    <span class="nowrap"><strong>volt (V)</strong></span>
     <span class="nowrap">= J/C</span>
     <span class="nowrap">= kg m<sup>2</sup> s<sup>−3</sup> A<sup>−1</sup></span>
   </td>
   <td colspan="2">
-    statV
+    <strong>statV</strong>
     <span class="nowrap">= erg/Fr</span>
   </td>
   <td>abV</td>
@@ -157,12 +157,12 @@ table td:last-child, table th:last-child { border-right: none !important; }
 <tr class="odd">
   <td rowspan="2">Electric field, <strong>E</strong></td>
   <td>
-    <span class="nowrap">V/m</span>
+    <span class="nowrap"><strong>V/m</strong></span>
     <span class="nowrap">= N/C</span>
     <span class="nowrap">= kg m s<sup>−3</sup> A<sup>−1</sup></span>
   </td>
   <td colspan="2">
-    <span class="nowrap">statV/cm</span>
+    <span class="nowrap"><strong>statV/cm</strong></span>
     <span class="nowrap">= dyn/Fr</span>
     <span class="nowrap">= Fr/cm<sup>2</sup></span>
     <span class="nowrap">= g<sup>1/2</sup> cm<sup>−1/2</sup> s<sup>−1</sup></span>
@@ -178,8 +178,8 @@ table td:last-child, table th:last-child { border-right: none !important; }
 </tr>
 <tr class="odd">
   <td rowspan="2">Electric displacement field, <strong>D</strong></td>
-  <td class="nowrap">C/m<sup>2</sup></td>
-  <td class="nowrap" colspan="2">Fr/cm<sup>2</sup></td>
+  <td class="nowrap"><strong>C/m<sup>2</sup></strong></td>
+  <td class="nowrap" colspan="2"><strong>Fr/cm<sup>2</sup></strong></td>
   <td class="nowrap">abC/cm<sup>2</sup></td>
   <td></td>
 </tr>
@@ -190,27 +190,26 @@ table td:last-child, table th:last-child { border-right: none !important; }
 </tr>
 <tr class="odd">
   <td rowspan="2">Polarization density, <strong>P</strong></td>
-  <td class="nowrap">C/m<sup>2</sup></td>
-  <td></td>
+  <td class="nowrap"><strong>C/m<sup>2</sup></strong></td>
+  <td class="nowrap" colspan="2"><strong>Fr/cm<sup>2</sup></strong></td>
   <td></td>
   <td></td>
   <td></td>
 </tr>
 <tr class="even">
   <td class="dimensions">T L<sup>−2</sup> I</td>
-  <td class="dimensions"></td>
-  <td class="dimensions"></td>
+  <td class="dimensions" colspan="2">T<sup>−1</sup> L<sup>−1/2</sup> M<sup>1/2</sup></td>
   <td class="dimensions"></td>
   <td class="dimensions"></td>
 </tr>
 <tr class="odd">
   <td rowspan="2">Electric flux, Φ<sub><em>E</em></sub></td>
   <td>
-    <span class="nowrap">V⋅m</span>
+    <span class="nowrap"><strong>V⋅m</strong></span>
     <span class="nowrap">= N m<sup>2</sup>/C</span>
     <span class="nowrap">= kg m<sup>3</sup> s<sup>−3</sup> A<sup>−1</sup></span>
   </td>
-  <td class="dimensions"></td>
+  <td class="dimensions" colspan="2"><strong>Fr</strong></td>
   <td class="dimensions"></td>
   <td class="dimensions"></td>
   <td class="dimensions"></td>
@@ -220,26 +219,28 @@ table td:last-child, table th:last-child { border-right: none !important; }
   <td class="dimensions"></td>
   <td class="dimensions"></td>
   <td class="dimensions"></td>
-  <td class="dimensions"></td>
 </tr>
 <tr class="odd">
   <td rowspan="2">The <em>other</em> electric flux, Φ<sub><em>D</em></sub></td>
   <td class="nowrap">C</td>
-  <td class="nowrap" colspan="2">Fr</td>
+  <td class="nowrap" colspan="2"><strong>Fr</strong></td>
   <td class="nowrap"></td>
   <td class="nowrap"></td>
   <td class="nowrap"></td>
 </tr>
 <tr class="even">
   <td class="dimensions">T I</td>
-  <td class="dimensions" colspan="2"></td>
+  <td class="dimensions" colspan="2">T<sup>−1</sup> L<sup>3/2</sup> M<sup>1/2</sup></td>
   <td class="dimensions"></td>
   <td class="dimensions"></td>
   <td class="dimensions"></td>
 </tr>
 <tr class="odd">
   <td rowspan="2">Magnetic flux density, <strong>B</strong></td>
-  <td>tesla (T) = Wb/m<sup>2</sup></td>
+  <td>
+    <span class="nowrap">tesla (T)</span>
+    <span class="nowrap">= Wb/m<sup>2</sup></span>
+  </td>
   <td>statT</td>
   <td colspan="2">G</td>
   <td></td>
@@ -253,7 +254,7 @@ table td:last-child, table th:last-child { border-right: none !important; }
 <tr class="odd">
   <td rowspan="2">Magnetic field strength, <strong>H</strong></td>
   <td class="nowrap">A/m</td>
-  <td>statA/cm</td>
+  <td class="nowrap">statA/cm</td>
   <td colspan="2">Oe</td>
   <td></td>
 </tr>
