@@ -11,8 +11,8 @@ import Unitful: cm, g, s, dyn, erg
 #       symbol  abbrev.     name        equals          tf     autodocs
 @unit   Fr      "Fr"        franklin    1sqrt(dyn)*cm   false
 @unit   statV   "statV"     statvolt    1erg/Fr         false
-#@unit  G       "G"         gauss
 @unit   Mx      "Mx"        maxwell     1sqrt(cm^3*g)/s false
+@unit   G       "G"         gauss       1Mx/cm^2        false
 @unit   statF   "statF"     statfarad   1cm             false
 @unit   statH   "statH"     stathenry   1statV*s^2/Fr   false
 @unit   Oe      "Oe"        oersted     1dyn/Mx         false
