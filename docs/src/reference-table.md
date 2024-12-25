@@ -47,7 +47,7 @@ table td:last-child, table th:last-child { border-right: none !important; }
   </td>
 </tr>
 <tr class="even">
-  <td class="dimensions" colspan="5">T<sup>−2</sup> L M</td>
+  <td class="dimensions" colspan="5">M L T<sup>−2</sup></td>
 </tr>
 <tr class="odd">
   <td rowspan="2">Energy, <em>E</em></td>
@@ -64,7 +64,7 @@ table td:last-child, table th:last-child { border-right: none !important; }
 </tr>
 
 <tr class="even">
-  <td class="dimensions" colspan="5">T<sup>−2</sup> L<sup>2</sup> M</td>
+  <td class="dimensions" colspan="5">M L<sup>2</sup> T<sup>−2</sup></td>
 </tr>
 <tr class="odd">
   <td rowspan="2">Charge, <em>Q</em>,&nbsp;<em>q</em></td>
@@ -90,8 +90,8 @@ table td:last-child, table th:last-child { border-right: none !important; }
 </tr>
 <tr class="even">
   <td class="dimensions">T I</td>
-  <td class="dimensions" colspan="2">T<sup>−1</sup> L<sup>3/2</sup> M<sup>1/2</sup></td>
-  <td class="dimensions">L<sup>1/2</sup> M<sup>1/2</sup></td>
+  <td class="dimensions" colspan="2">M<sup>1/2</sup> L<sup>3/2</sup> T<sup>−1</sup></td>
+  <td class="dimensions">M<sup>1/2</sup> L<sup>1/2</sup></td>
   <td></td>
 </tr>
 <tr class="odd">
@@ -118,8 +118,8 @@ table td:last-child, table th:last-child { border-right: none !important; }
 </tr>
 <tr class="even">
   <td class="dimensions">I</td>
-  <td class="dimensions" colspan="2">T<sup>−2</sup> L<sup>3/2</sup> M<sup>1/2</sup></td>
-  <td class="dimensions">T<sup>−1</sup> L<sup>1/2</sup> M<sup>1/2</sup></td>
+  <td class="dimensions" colspan="2">M<sup>1/2</sup> L<sup>3/2</sup> T<sup>−2</sup></td>
+  <td class="dimensions">M<sup>1/2</sup> L<sup>1/2</sup> T<sup>−1</sup></td>
   <td></td>
 </tr>
 
@@ -131,8 +131,8 @@ table td:last-child, table th:last-child { border-right: none !important; }
   <td class="nowrap"></td>
 </tr>
 <tr class="even">
-  <td class="dimensions">T L<sup>−3</sup> I</td>
-  <td class="dimensions" colspan="2">T<sup>−1</sup> L<sup>−3/2</sup> M<sup>1/2</sup></td>
+  <td class="dimensions">L<sup>−3</sup> T I</td>
+  <td class="dimensions" colspan="2">M<sup>1/2</sup> L<sup>−3/2</sup> T<sup>−1</sup></td>
   <td class="dimensions"></td>
   <td class="dimensions"></td>
 </tr>
@@ -145,7 +145,7 @@ table td:last-child, table th:last-child { border-right: none !important; }
 </tr>
 <tr class="even">
   <td class="dimensions">L<sup>−2</sup> I</td>
-  <td class="dimensions" colspan="2">T<sup>−2</sup> L<sup>−1/2</sup> M<sup>1/2</sup></td>
+  <td class="dimensions" colspan="2">M<sup>1/2</sup> L<sup>−1/2</sup> T<sup>−2</sup></td>
   <td class="dimensions"></td>
   <td class="dimensions"></td>
 </tr>
@@ -165,8 +165,8 @@ table td:last-child, table th:last-child { border-right: none !important; }
   <td></td>
 </tr>
 <tr class="even">
-  <td class="dimensions">T<sup>−3</sup> L<sup>2</sup> M I<sup>−1</sup></td>
-  <td class="dimensions" colspan="2">T<sup>−1</sup> L<sup>1/2</sup> M<sup>1/2</sup></td>
+  <td class="dimensions">M L<sup>2</sup> T<sup>−3</sup> I<sup>−1</sup></td>
+  <td class="dimensions" colspan="2">M<sup>1/2</sup> L<sup>1/2</sup> T<sup>−1</sup></td>
   <td class="dimensions"></td>
   <td class="dimensions"></td>
 </tr>
@@ -188,8 +188,8 @@ table td:last-child, table th:last-child { border-right: none !important; }
   <td></td>
 </tr>
 <tr class="even">
-  <td class="dimensions">T<sup>−3</sup> L M I<sup>−1</sup></td>
-  <td class="dimensions" colspan="2">T<sup>−1</sup> L<sup>−1/2</sup> M<sup>1/2</sup></td>
+  <td class="dimensions">M L T<sup>−3</sup> I<sup>−1</sup></td>
+  <td class="dimensions" colspan="2">M<sup>1/2</sup> L<sup>−1/2</sup> T<sup>−1</sup></td>
   <td class="dimensions"></td>
   <td class="dimensions"></td>
 </tr>
@@ -201,8 +201,8 @@ table td:last-child, table th:last-child { border-right: none !important; }
   <td></td>
 </tr>
 <tr class="even">
-  <td class="dimensions">T L<sup>−2</sup> I</td>
-  <td class="dimensions" colspan="2">T<sup>−1</sup> L<sup>−1/2</sup> M<sup>1/2</sup></td>
+  <td class="dimensions">L<sup>−2</sup> T I</td>
+  <td class="dimensions" colspan="2">M<sup>1/2</sup> L<sup>−1/2</sup> T<sup>−1</sup></td>
   <td class="dimensions"></td>
   <td class="dimensions"></td>
 </tr>
@@ -214,8 +214,8 @@ table td:last-child, table th:last-child { border-right: none !important; }
   <td></td>
 </tr>
 <tr class="even">
-  <td class="dimensions">T L<sup>−2</sup> I</td>
-  <td class="dimensions" colspan="2">T<sup>−1</sup> L<sup>−1/2</sup> M<sup>1/2</sup></td>
+  <td class="dimensions">L<sup>−2</sup> T I</td>
+  <td class="dimensions" colspan="2">M<sup>1/2</sup> L<sup>−1/2</sup> T<sup>−1</sup></td>
   <td class="dimensions"></td>
   <td class="dimensions"></td>
 </tr>
@@ -231,8 +231,8 @@ table td:last-child, table th:last-child { border-right: none !important; }
   <td class="dimensions"></td>
 </tr>
 <tr class="even">
-  <td class="dimensions">T<sup>−3</sup> L<sup>3</sup> M I<sup>−1</sup></td>
-  <td class="dimensions" colspan="2">T<sup>−1</sup> L<sup>3/2</sup> M<sup>1/2</sup></td>
+  <td class="dimensions">M L<sup>3</sup> T<sup>−3</sup> I<sup>−1</sup></td>
+  <td class="dimensions" colspan="2">M<sup>1/2</sup> L<sup>3/2</sup> T<sup>−1</sup></td>
   <td class="dimensions"></td>
   <td class="dimensions"></td>
 </tr>
@@ -245,7 +245,7 @@ table td:last-child, table th:last-child { border-right: none !important; }
 </tr>
 <tr class="even">
   <td class="dimensions">T I</td>
-  <td class="dimensions" colspan="2">T<sup>−1</sup> L<sup>3/2</sup> M<sup>1/2</sup></td>
+  <td class="dimensions" colspan="2">M<sup>1/2</sup> L<sup>3/2</sup> T<sup>−1</sup></td>
   <td class="dimensions"></td>
   <td class="dimensions"></td>
 </tr>
@@ -261,9 +261,9 @@ table td:last-child, table th:last-child { border-right: none !important; }
   <td></td>
 </tr>
 <tr class="even">
-  <td class="dimensions">T<sup>−2</sup> M I<sup>−1</sup></td>
+  <td class="dimensions">M T<sup>−2</sup> I<sup>−1</sup></td>
   <td></td>
-  <td class="dimensions" colspan="2">T<sup>−1</sup> L<sup>−1/2</sup> M<sup>1/2</sup></td>
+  <td class="dimensions" colspan="2">M<sup>1/2</sup> L<sup>−1/2</sup> T<sup>−1</sup></td>
   <td></td>
 </tr>
 <tr class="odd">
@@ -276,7 +276,7 @@ table td:last-child, table th:last-child { border-right: none !important; }
 <tr class="even">
   <td class="dimensions">L<sup>−1</sup> I</td>
   <td class="dimensions"></td>
-  <td class="dimensions" colspan="2">T<sup>−1</sup> L<sup>−1/2</sup> M<sup>1/2</sup></td>
+  <td class="dimensions" colspan="2">M<sup>1/2</sup> L<sup>−1/2</sup> T<sup>−1</sup></td>
   <td class="dimensions"></td>
 </tr>
 <tr class="odd">
@@ -291,7 +291,7 @@ table td:last-child, table th:last-child { border-right: none !important; }
   <td></td>
 </tr>
 <tr class="even">
-  <td class="dimensions">T<sup>−2</sup> L<sup>2</sup> M I<sup>−1</sup></td>
+  <td class="dimensions">M L<sup>2</sup> T<sup>−2</sup> I<sup>−1</sup></td>
   <td class="dimensions"></td>
   <td class="dimensions" colspan="2"></td>
   <td></td>
@@ -305,9 +305,9 @@ table td:last-child, table th:last-child { border-right: none !important; }
   <td class="nowrap"></td>
 </tr>
 <tr class="even">
-  <td class="dimensions">T<sup>4</sup> L<sup>−3</sup> M<sup>−1</sup> I<sup>2</sup></td>
+  <td class="dimensions">M<sup>−1</sup> L<sup>−3</sup> T<sup>4</sup> I<sup>2</sup></td>
   <td class="dimensions" colspan="2">1</td>
-  <td class="dimensions">T<sup>2</sup> L<sup>−2</sup></td>
+  <td class="dimensions">L<sup>−2</sup> T<sup>2</sup></td>
   <td></td>
 </tr>
 <tr class="odd">
@@ -318,8 +318,8 @@ table td:last-child, table th:last-child { border-right: none !important; }
   <td class="nowrap"></td>
 </tr>
 <tr class="even">
-  <td class="dimensions">T<sup>−2</sup> L M I<sup>−2</sup></td>
-  <td class="dimensions">T<sup>2</sup> L<sup>−2</sup></td>
+  <td class="dimensions">M L T<sup>−2</sup> I<sup>−2</sup></td>
+  <td class="dimensions">L<sup>−2</sup> T<sup>2</sup></td>
   <td class="dimensions" colspan="2">1</td>
   <td></td>
 </tr>
@@ -336,7 +336,7 @@ table td:last-child, table th:last-child { border-right: none !important; }
   <td></td>
 </tr>
 <tr class="even">
-  <td class="dimensions">T<sup>4</sup> L<sup>−2</sup> M<sup>−1</sup> I<sup>2</sup></td>
+  <td class="dimensions">M<sup>−1</sup> L<sup>−2</sup> T<sup>4</sup> I<sup>2</sup></td>
   <td class="dimensions" colspan="2">L</td>
   <td></td>
   <td></td>
@@ -356,8 +356,8 @@ table td:last-child, table th:last-child { border-right: none !important; }
   <td></td>
 </tr>
 <tr class="even">
-  <td class="dimensions">T<sup>−2</sup> L<sup>2</sup> M I<sup>−2</sup></td>
-  <td class="dimensions" colspan="2">T<sup>2</sup> L<sup>−1</sup></td>
+  <td class="dimensions">M L<sup>2</sup> T<sup>−2</sup> I<sup>−2</sup></td>
+  <td class="dimensions" colspan="2">L<sup>−1</sup> T<sup>2</sup></td>
   <td class="dimensions"></td>
   <td class="dimensions"></td>
 </tr>
@@ -376,8 +376,8 @@ table td:last-child, table th:last-child { border-right: none !important; }
   <td></td>
 </tr>
 <tr class="even">
-  <td class="dimensions">T<sup>−3</sup> L<sup>2</sup> M I<sup>−2</sup></td>
-  <td class="dimensions" colspan="2">T L<sup>−1</sup></td>
+  <td class="dimensions">M L<sup>2</sup> T<sup>−3</sup> I<sup>−2</sup></td>
+  <td class="dimensions" colspan="2">L<sup>−1</sup> T</td>
   <td class="dimensions"></td>
   <td class="dimensions"></td>
 </tr>
@@ -394,8 +394,8 @@ table td:last-child, table th:last-child { border-right: none !important; }
   <td></td>
 </tr>
 <tr class="even">
-  <td class="dimensions">T<sup>3</sup> L<sup>−2</sup> M<sup>−1</sup> I<sup>2</sup></td>
-  <td class="dimensions" colspan="2">T<sup>−1</sup> L</td>
+  <td class="dimensions">M<sup>−1</sup> L<sup>−2</sup> T<sup>3</sup> I<sup>2</sup></td>
+  <td class="dimensions" colspan="2">L T<sup>−1</sup></td>
   <td class="dimensions"></td>
   <td class="dimensions"></td>
 </tr>
@@ -410,7 +410,7 @@ table td:last-child, table th:last-child { border-right: none !important; }
   <td></td>
 </tr>
 <tr class="even">
-  <td class="dimensions">T<sup>−3</sup> L<sup>3</sup> M I<sup>−2</sup></td>
+  <td class="dimensions">M L<sup>3</sup> T<sup>−3</sup> I<sup>−2</sup></td>
   <td class="dimensions" colspan="2">T</td>
   <td class="dimensions"></td>
   <td class="dimensions"></td>
@@ -427,7 +427,7 @@ table td:last-child, table th:last-child { border-right: none !important; }
   <td></td>
 </tr>
 <tr class="even">
-  <td class="dimensions">T<sup>3</sup> L<sup>−3</sup> M<sup>−1</sup> I<sup>2</sup></td>
+  <td class="dimensions">M<sup>−1</sup> L<sup>−3</sup> T<sup>3</sup> I<sup>2</sup></td>
   <td class="dimensions" colspan="2">T<sup>−1</sup></td>
   <td class="dimensions"></td>
   <td class="dimensions"></td>
