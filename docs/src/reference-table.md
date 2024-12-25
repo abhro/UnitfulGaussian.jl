@@ -67,7 +67,10 @@ table td:last-child, table th:last-child { border-right: none !important; }
 </tr>
 <tr class="odd">
   <td rowspan="2">Charge, <em>Q</em>,&nbsp;<em>q</em></td>
-  <td class="nowrap">coulomb (C) = A⋅s</td>
+  <td>
+    <span class="nowrap">coulomb (C)</span>
+    <span class="nowrap">= A⋅s</span>
+  </td>
   <td colspan="2">
     <span class="nowrap">franklin (Fr)</span>
     <span class="nowrap">= statcoulomb (statC)</span>
@@ -76,7 +79,7 @@ table td:last-child, table th:last-child { border-right: none !important; }
     <span class="nowrap">= cm<sup>3/2</sup> g<sup>1/2</sup> s<sup>−1</sup></span>
   </td>
   <td>
-    <span class="nowrap">biot second (Bi⋅s)</span>
+    <span class="nowrap">Bi⋅s</span>
     <span class="nowrap">= abcoulomb (abC)</span>
     <span class="nowrap">= emu charge</span>
     <span class="nowrap">= dyn<sup>1/2</sup> s</span>
@@ -94,7 +97,7 @@ table td:last-child, table th:last-child { border-right: none !important; }
   <td rowspan="2">Current, <em>I</em>,&nbsp;<em>j</em></td>
   <td>ampere (A) = C/s</td>
   <td colspan="2">
-    <span class="nowrap">franklin per second (Fr/s)</span>
+    <span class="nowrap">Fr/s</span>
     <span class="nowrap">= statampere (statA)</span>
     <span class="nowrap">= esu current</span>
     <span class="nowrap">= dyn<sup>1/2</sup> cm/s</span>
@@ -117,7 +120,7 @@ table td:last-child, table th:last-child { border-right: none !important; }
 </tr>
 <tr class="odd">
   <td rowspan="2">Current density, <strong>J</strong></td>
-  <td class="nowrap">ampere per square metre (A/m<sup>2</sup>)</td>
+  <td class="nowrap">A/m<sup>2</sup></td>
   <td class="nowrap" colspan="2">statA/cm<sup>2</sup></td>
   <td class="nowrap">Bi/cm<sup>2</sup></td>
   <td></td>
@@ -151,7 +154,7 @@ table td:last-child, table th:last-child { border-right: none !important; }
 <tr class="odd">
   <td rowspan="2">Electric field, <strong>E</strong></td>
   <td>
-    <span class="nowrap">volt per metre (V/m)</span>
+    <span class="nowrap">V/m</span>
     <span class="nowrap">= N/C</span>
     <span class="nowrap">= kg m s<sup>−3</sup> A<sup>−1</sup></span>
   </td>
@@ -172,7 +175,7 @@ table td:last-child, table th:last-child { border-right: none !important; }
 </tr>
 <tr class="odd">
   <td rowspan="2">Electric displacement field, <strong>D</strong></td>
-  <td class="nowrap">coulomb per square metre (C/m<sup>2</sup>)</td>
+  <td class="nowrap">C/m<sup>2</sup></td>
   <td class="nowrap" colspan="2">Fr/cm<sup>2</sup></td>
   <td class="nowrap">abC/cm<sup>2</sup></td>
   <td></td>
@@ -184,7 +187,7 @@ table td:last-child, table th:last-child { border-right: none !important; }
 </tr>
 <tr class="odd">
   <td rowspan="2">Polarization density, <strong>P</strong></td>
-  <td class="nowrap">coulomb per square metre (C/m<sup>2</sup>)</td>
+  <td class="nowrap">C/m<sup>2</sup></td>
   <td></td>
   <td></td>
   <td></td>
@@ -200,7 +203,7 @@ table td:last-child, table th:last-child { border-right: none !important; }
 <tr class="odd">
   <td rowspan="2">Electric flux, Φ<sub><em>E</em></sub></td>
   <td>
-    <span class="nowrap">volt metre (V⋅m)</span>
+    <span class="nowrap">V⋅m</span>
     <span class="nowrap">= N m<sup>2</sup>/C</span>
     <span class="nowrap">= kg m<sup>3</sup> s<sup>−3</sup> A<sup>−1</sup></span>
   </td>
@@ -246,7 +249,7 @@ table td:last-child, table th:last-child { border-right: none !important; }
 </tr>
 <tr class="odd">
   <td rowspan="2">Magnetic field strength, <strong>H</strong></td>
-  <td class="nowrap">ampere per metre (A/m)</td>
+  <td class="nowrap">A/m</td>
   <td>statA/cm</td>
   <td colspan="2">Oe</td>
   <td></td>
@@ -259,7 +262,7 @@ table td:last-child, table th:last-child { border-right: none !important; }
 </tr>
 <tr class="odd">
   <td rowspan="2">Electric permittivity, <em>ε</em></td>
-  <td class="nowrap">farad per metre (F/m)</td>
+  <td class="nowrap">F/m</td>
   <td class="nowrap" colspan="2">cm/cm</td>
   <td class="nowrap">s<sup>2</sup>/cm<sup>2</sup></td>
   <td></td>
@@ -272,7 +275,7 @@ table td:last-child, table th:last-child { border-right: none !important; }
 </tr>
 <tr class="odd">
   <td rowspan="2">Magnetic permeability, <em>μ</em></td>
-  <td class="nowrap">henry per metre (H/m)</td>
+  <td class="nowrap">H/m</td>
   <td class="nowrap">s<sup>2</sup>/cm<sup>2</sup></td>
   <td colspan="2" class="nowrap">cm/cm</td>
   <td></td>
@@ -379,7 +382,7 @@ table td:last-child, table th:last-child { border-right: none !important; }
 <tr class="odd">
   <td rowspan="2">Resistivity, <em>ρ</em></td>
   <td>
-    <span class="nowrap">ohm metre (Ω⋅m)</span>
+    <span class="nowrap">Ω⋅m</span>
     <span class="nowrap">= kg m<sup>3</sup> s<sup>−3</sup> A<sup>−2</sup></span>
   </td>
   <td class="dimensions" colspan="2">s</td>
@@ -395,7 +398,8 @@ table td:last-child, table th:last-child { border-right: none !important; }
 <tr class="odd">
   <td rowspan="2">Conductivity, <em>σ</em></td>
   <td>
-    <span class="nowrap">siemens per metre (S/m)</span>
+    <span class="nowrap">S/m</span>
+    <span class="nowrap">= ℧/m</span>
     <span class="nowrap">= kg<sup>−1</sup> m<sup>−3</sup> s<sup>3</sup> A<sup>2</sup></span>
   </td>
   <td colspan="2">s<sup>−1</sup></td>
