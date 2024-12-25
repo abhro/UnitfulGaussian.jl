@@ -1,3 +1,5 @@
+# Reference table of Gaussian and SI Units
+
 ```@raw html
 <style>
 .dimensions { white-space: nowrap; font-family: sans-serif; }
@@ -133,7 +135,10 @@ table td:last-child, table th:last-child { border-right: none !important; }
     <span class="nowrap">= J/C</span>
     <span class="nowrap">= kg m<sup>2</sup> s<sup>−3</sup> A<sup>−1</sup></span>
   </td>
-  <td colspan="2">statV</td>
+  <td colspan="2">
+    statV
+    <span class="nowrap">= erg/Fr</span>
+  </td>
   <td>abV</td>
   <td></td>
 </tr>
@@ -314,7 +319,7 @@ table td:last-child, table th:last-child { border-right: none !important; }
   <td class="dimensions"></td>
 </tr>
 <tr class="odd">
-  <td rowspan="2">Resistance</td>
+  <td rowspan="2">Resistance, <em>R</em></td>
   <td>
     <span class="nowrap">ohm (Ω)</span>
     <span class="nowrap">= V/A</span>
@@ -334,21 +339,20 @@ table td:last-child, table th:last-child { border-right: none !important; }
   <td class="dimensions"></td>
 </tr>
 <tr class="odd">
-  <td rowspan="2">Conductance</td>
+  <td rowspan="2">Conductance, <em>G</em></td>
   <td>
     <span class="nowrap">siemens (S)</span>
     <span class="nowrap">= mho (℧)</span>
     <span class="nowrap">= Ω<sup>−1</sup></span>
     <span class="nowrap">= kg<sup>−1</sup> m<sup>−2</sup> s<sup>3</sup> A<sup>2</sup></span>
   </td>
-  <td></td>
-  <td></td>
+  <td colspan="2" class="nowrap">cm/s</td>
   <td></td>
   <td></td>
 </tr>
 <tr class="even">
   <td class="dimensions">T<sup>3</sup> L<sup>−2</sup> M<sup>−1</sup> I<sup>2</sup></td>
-  <td class="dimensions"></td>
+  <td class="dimensions" colspan="2">T<sup>−1</sup> L</td>
   <td class="dimensions"></td>
   <td class="dimensions"></td>
   <td></td>
@@ -398,3 +402,7 @@ table td:last-child, table th:last-child { border-right: none !important; }
 </thead>
 </table>
 ```
+
+## Sources
+
+TODO
