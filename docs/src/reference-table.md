@@ -95,7 +95,10 @@ table td:last-child, table th:last-child { border-right: none !important; }
 </tr>
 <tr class="odd">
   <td rowspan="2">Current, <em>I</em>,&nbsp;<em>j</em></td>
-  <td>ampere (A) = C/s</td>
+  <td>
+    <span class="nowrap">ampere (A)</span>
+    <span class="nowrap">= C/s</span>
+  </td>
   <td colspan="2">
     <span class="nowrap">Fr/s</span>
     <span class="nowrap">= statampere (statA)</span>
