@@ -112,7 +112,7 @@ table td:last-child, table th:last-child { border-right: none !important; }
 <tr class="odd">
   <td rowspan="2">Current density, <strong>J</strong></td>
   <td class="nowrap">ampere per square metre (A/m<sup>2</sup>)</td>
-  <td colspan="2" class="nowrap">statA/cm<sup>2</sup></td>
+  <td class="nowrap" colspan="2">statA/cm<sup>2</sup></td>
   <td class="nowrap">Bi/cm<sup>2</sup></td>
   <td></td>
 </tr>
@@ -152,13 +152,42 @@ table td:last-child, table th:last-child { border-right: none !important; }
   <td colspan="2">
     <span class="nowrap">statV/cm</span>
     <span class="nowrap">= dyn/Fr</span>
+    <span class="nowrap">= Fr/cm<sup>2</sup></span>
+    <span class="nowrap">= g<sup>1/2</sup> cm<sup>−1/2</sup> s<sup>−1</sup></span>
   </td>
   <td>abV/cm</td>
   <td></td>
 </tr>
 <tr class="even">
   <td class="dimensions">T<sup>−3</sup> L M I<sup>−1</sup></td>
-  <td class="dimensions" colspan="2"></td>
+  <td class="dimensions" colspan="2">T<sup>−1</sup> L<sup>−1/2</sup> M<sup>1/2</sup></td>
+  <td class="dimensions"></td>
+  <td class="dimensions"></td>
+</tr>
+<tr class="odd">
+  <td rowspan="2">Electric displacement field, <strong>D</strong></td>
+  <td class="nowrap">coulomb per square metre (C/m<sup>2</sup>)</td>
+  <td class="nowrap" colspan="2">Fr/cm<sup>2</sup></td>
+  <td class="nowrap">abC/cm<sup>2</sup></td>
+  <td></td>
+</tr>
+<tr class="even">
+  <td class="dimensions">T L<sup>−2</sup> I</td>
+  <td class="dimensions" colspan="2">T<sup>−1</sup> L<sup>−1/2</sup> M<sup>1/2</sup></td>
+  <td class="dimensions"></td>
+</tr>
+<tr class="odd">
+  <td rowspan="2">Polarization density, <strong>P</strong></td>
+  <td class="nowrap">coulomb per square metre (C/m<sup>2</sup>)</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr class="even">
+  <td class="dimensions">T L<sup>−2</sup> I</td>
+  <td class="dimensions"></td>
+  <td class="dimensions"></td>
   <td class="dimensions"></td>
   <td class="dimensions"></td>
 </tr>
@@ -183,16 +212,14 @@ table td:last-child, table th:last-child { border-right: none !important; }
 </tr>
 <tr class="odd">
   <td rowspan="2">The <em>other</em> electric flux, Φ<sub><em>D</em></sub></td>
-  <td>
-    <span class="nowrap">C </span>
-  </td>
-  <td class="dimensions" colspan="2">Fr</td>
-  <td class="dimensions"></td>
-  <td class="dimensions"></td>
-  <td class="dimensions"></td>
+  <td class="nowrap">C</td>
+  <td class="nowrap" colspan="2">Fr</td>
+  <td class="nowrap"></td>
+  <td class="nowrap"></td>
+  <td class="nowrap"></td>
 </tr>
 <tr class="even">
-  <td class="dimensions"></td>
+  <td class="dimensions">T I</td>
   <td class="dimensions" colspan="2"></td>
   <td class="dimensions"></td>
   <td class="dimensions"></td>
@@ -212,38 +239,23 @@ table td:last-child, table th:last-child { border-right: none !important; }
   <td></td>
 </tr>
 <tr class="odd">
-  <td rowspan="2">Electric displacement field, <strong>D</strong></td>
-  <td>coulomb per square metre (C/m<sup>2</sup>)</td>
-  <td colspan="2">Fr/cm<sup>2</sup></td>
-  <td>abC/cm<sup>2</sup></td>
+  <td rowspan="2">Magnetic field strength, <strong>H</strong></td>
+  <td class="nowrap">ampere per metre (A/m)</td>
+  <td>statA/cm</td>
+  <td colspan="2">Oe</td>
   <td></td>
 </tr>
 <tr class="even">
-  <td class="dimensions">T L<sup>−2</sup> I</td>
-  <td colspan="2"></td>
-  <td></td>
-  <td></td>
-</tr>
-<tr class="odd">
-  <td rowspan="2">Polarization density, <strong>P</strong></td>
-  <td class="nowrap">coulomb per square metre (C/m<sup>2</sup>)</td>
-  <td></td>
-  <td></td>
-  <td></td>
-  <td></td>
-</tr>
-<tr class="even">
-  <td class="dimensions">T L<sup>−2</sup> I</td>
-  <td></td>
-  <td></td>
-  <td></td>
-  <td></td>
+  <td class="dimensions">L<sup>−1</sup> I</td>
+  <td class="dimensions"></td>
+  <td class="dimensions" colspan="2"></td>
+  <td class="dimensions"></td>
 </tr>
 <tr class="odd">
   <td rowspan="2">Electric permittivity, <em>ε</em></td>
   <td class="nowrap">farad per metre (F/m)</td>
-  <td colspan="2">cm/cm</td>
-  <td>s<sup>2</sup>/cm<sup>2</sup></td>
+  <td class="nowrap" colspan="2">cm/cm</td>
+  <td class="nowrap">s<sup>2</sup>/cm<sup>2</sup></td>
   <td></td>
 </tr>
 <tr class="even">
@@ -281,19 +293,6 @@ table td:last-child, table th:last-child { border-right: none !important; }
   <td class="dimensions"></td>
   <td class="dimensions" colspan="2"></td>
   <td></td>
-</tr>
-<tr class="odd">
-  <td rowspan="2">Magnetic field strength, <strong>H</strong></td>
-  <td class="nowrap">ampere per metre (A/m)</td>
-  <td>statA/cm</td>
-  <td colspan="2">Oe</td>
-  <td></td>
-</tr>
-<tr class="even">
-  <td class="dimensions">L<sup>−1</sup> I</td>
-  <td class="dimensions"></td>
-  <td class="dimensions" colspan="2"></td>
-  <td class="dimensions"></td>
 </tr>
 <tr class="odd">
   <td rowspan="2">Capacitance</td>
@@ -414,4 +413,4 @@ table td:last-child, table th:last-child { border-right: none !important; }
   <th class="nowrap">Heaviside–Lorentz</th>
 </tr>
 </thead>
-</table><h2 id="Sources"><a class="docs-heading-anchor" href="#Sources">Sources</a><a id="Sources-1"></a><a class="docs-heading-anchor-permalink" href="#Sources" title="Permalink"></a></h2><p>TODO</p></article><nav class="docs-footer"><a class="docs-footer-prevpage" href="../">« Home</a><a class="docs-footer-nextpage" href="../closures/">Closures »</a><div class="flexbox-break"></div><p class="footer-message">Powered by <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> and the <a href="https://julialang.org/">Julia Programming Language</a>.</p></nav></div><div class="modal" id="documenter-settings"><div class="modal-background"></div><div class="modal-card"><header class="modal-card-head"><p class="modal-card-title">Settings</p><button class="delete"></button></header><section class="modal-card-body"><p><label class="label">Theme</label><div class="select"><select id="documenter-themepicker"><option value="auto">Automatic (OS)</option><option value="documenter-light">documenter-light</option><option value="documenter-dark">documenter-dark</option><option value="catppuccin-latte">catppuccin-latte</option><option value="catppuccin-frappe">catppuccin-frappe</option><option value="catppuccin-macchiato">catppuccin-macchiato</option><option value="catppuccin-mocha">catppuccin-mocha</option></select></div></p><hr/><p>This document was generated with <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> version 1.8.0 on <span class="colophon-date" title="Wednesday 25 December 2024 19:02">Wednesday 25 December 2024</span>. Using Julia version 1.11.2.</p></section><footer class="modal-card-foot"></footer></div></div></div></body></html>
+</table><h2 id="Sources"><a class="docs-heading-anchor" href="#Sources">Sources</a><a id="Sources-1"></a><a class="docs-heading-anchor-permalink" href="#Sources" title="Permalink"></a></h2><p>TODO</p></article><nav class="docs-footer"><a class="docs-footer-prevpage" href="../">« Home</a><a class="docs-footer-nextpage" href="../closures/">Closures »</a><div class="flexbox-break"></div><p class="footer-message">Powered by <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> and the <a href="https://julialang.org/">Julia Programming Language</a>.</p></nav></div><div class="modal" id="documenter-settings"><div class="modal-background"></div><div class="modal-card"><header class="modal-card-head"><p class="modal-card-title">Settings</p><button class="delete"></button></header><section class="modal-card-body"><p><label class="label">Theme</label><div class="select"><select id="documenter-themepicker"><option value="auto">Automatic (OS)</option><option value="documenter-light">documenter-light</option><option value="documenter-dark">documenter-dark</option><option value="catppuccin-latte">catppuccin-latte</option><option value="catppuccin-frappe">catppuccin-frappe</option><option value="catppuccin-macchiato">catppuccin-macchiato</option><option value="catppuccin-mocha">catppuccin-mocha</option></select></div></p><hr/><p>This document was generated with <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> version 1.8.0 on <span class="colophon-date" title="Wednesday 25 December 2024 19:11">Wednesday 25 December 2024</span>. Using Julia version 1.11.2.</p></section><footer class="modal-card-foot"></footer></div></div></div></body></html>
