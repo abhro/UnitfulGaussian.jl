@@ -155,7 +155,10 @@ table td:last-child, table th:last-child { border-right: none !important; }
     <span class="nowrap">= N/C</span>
     <span class="nowrap">= kg m s<sup>−3</sup> A<sup>−1</sup></span>
   </td>
-  <td colspan="2">statV/cm</td>
+  <td colspan="2">
+    <span class="nowrap">statV/cm</span>
+    <span class="nowrap">= dyn/Fr</span>
+  </td>
   <td>abV/cm</td>
   <td></td>
 </tr>
