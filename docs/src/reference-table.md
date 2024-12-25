@@ -118,7 +118,7 @@ table td:last-child, table th:last-child { border-right: none !important; }
 <tr class="odd">
   <td rowspan="2">Current density, <strong>J</strong></td>
   <td class="nowrap">ampere per square metre (A/m<sup>2</sup>)</td>
-  <td colspan="2" class="nowrap">statA/cm<sup>2</sup></td>
+  <td class="nowrap" colspan="2">statA/cm<sup>2</sup></td>
   <td class="nowrap">Bi/cm<sup>2</sup></td>
   <td></td>
 </tr>
@@ -158,13 +158,42 @@ table td:last-child, table th:last-child { border-right: none !important; }
   <td colspan="2">
     <span class="nowrap">statV/cm</span>
     <span class="nowrap">= dyn/Fr</span>
+    <span class="nowrap">= Fr/cm<sup>2</sup></span>
+    <span class="nowrap">= g<sup>1/2</sup> cm<sup>−1/2</sup> s<sup>−1</sup></span>
   </td>
   <td>abV/cm</td>
   <td></td>
 </tr>
 <tr class="even">
   <td class="dimensions">T<sup>−3</sup> L M I<sup>−1</sup></td>
-  <td class="dimensions" colspan="2"></td>
+  <td class="dimensions" colspan="2">T<sup>−1</sup> L<sup>−1/2</sup> M<sup>1/2</sup></td>
+  <td class="dimensions"></td>
+  <td class="dimensions"></td>
+</tr>
+<tr class="odd">
+  <td rowspan="2">Electric displacement field, <strong>D</strong></td>
+  <td class="nowrap">coulomb per square metre (C/m<sup>2</sup>)</td>
+  <td class="nowrap" colspan="2">Fr/cm<sup>2</sup></td>
+  <td class="nowrap">abC/cm<sup>2</sup></td>
+  <td></td>
+</tr>
+<tr class="even">
+  <td class="dimensions">T L<sup>−2</sup> I</td>
+  <td class="dimensions" colspan="2">T<sup>−1</sup> L<sup>−1/2</sup> M<sup>1/2</sup></td>
+  <td class="dimensions"></td>
+</tr>
+<tr class="odd">
+  <td rowspan="2">Polarization density, <strong>P</strong></td>
+  <td class="nowrap">coulomb per square metre (C/m<sup>2</sup>)</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr class="even">
+  <td class="dimensions">T L<sup>−2</sup> I</td>
+  <td class="dimensions"></td>
+  <td class="dimensions"></td>
   <td class="dimensions"></td>
   <td class="dimensions"></td>
 </tr>
@@ -189,16 +218,14 @@ table td:last-child, table th:last-child { border-right: none !important; }
 </tr>
 <tr class="odd">
   <td rowspan="2">The <em>other</em> electric flux, Φ<sub><em>D</em></sub></td>
-  <td>
-    <span class="nowrap">C </span>
-  </td>
-  <td class="dimensions" colspan="2">Fr</td>
-  <td class="dimensions"></td>
-  <td class="dimensions"></td>
-  <td class="dimensions"></td>
+  <td class="nowrap">C</td>
+  <td class="nowrap" colspan="2">Fr</td>
+  <td class="nowrap"></td>
+  <td class="nowrap"></td>
+  <td class="nowrap"></td>
 </tr>
 <tr class="even">
-  <td class="dimensions"></td>
+  <td class="dimensions">T I</td>
   <td class="dimensions" colspan="2"></td>
   <td class="dimensions"></td>
   <td class="dimensions"></td>
@@ -218,38 +245,23 @@ table td:last-child, table th:last-child { border-right: none !important; }
   <td></td>
 </tr>
 <tr class="odd">
-  <td rowspan="2">Electric displacement field, <strong>D</strong></td>
-  <td>coulomb per square metre (C/m<sup>2</sup>)</td>
-  <td colspan="2">Fr/cm<sup>2</sup></td>
-  <td>abC/cm<sup>2</sup></td>
+  <td rowspan="2">Magnetic field strength, <strong>H</strong></td>
+  <td class="nowrap">ampere per metre (A/m)</td>
+  <td>statA/cm</td>
+  <td colspan="2">Oe</td>
   <td></td>
 </tr>
 <tr class="even">
-  <td class="dimensions">T L<sup>−2</sup> I</td>
-  <td colspan="2"></td>
-  <td></td>
-  <td></td>
-</tr>
-<tr class="odd">
-  <td rowspan="2">Polarization density, <strong>P</strong></td>
-  <td class="nowrap">coulomb per square metre (C/m<sup>2</sup>)</td>
-  <td></td>
-  <td></td>
-  <td></td>
-  <td></td>
-</tr>
-<tr class="even">
-  <td class="dimensions">T L<sup>−2</sup> I</td>
-  <td></td>
-  <td></td>
-  <td></td>
-  <td></td>
+  <td class="dimensions">L<sup>−1</sup> I</td>
+  <td class="dimensions"></td>
+  <td class="dimensions" colspan="2"></td>
+  <td class="dimensions"></td>
 </tr>
 <tr class="odd">
   <td rowspan="2">Electric permittivity, <em>ε</em></td>
   <td class="nowrap">farad per metre (F/m)</td>
-  <td colspan="2">cm/cm</td>
-  <td>s<sup>2</sup>/cm<sup>2</sup></td>
+  <td class="nowrap" colspan="2">cm/cm</td>
+  <td class="nowrap">s<sup>2</sup>/cm<sup>2</sup></td>
   <td></td>
 </tr>
 <tr class="even">
@@ -287,19 +299,6 @@ table td:last-child, table th:last-child { border-right: none !important; }
   <td class="dimensions"></td>
   <td class="dimensions" colspan="2"></td>
   <td></td>
-</tr>
-<tr class="odd">
-  <td rowspan="2">Magnetic field strength, <strong>H</strong></td>
-  <td class="nowrap">ampere per metre (A/m)</td>
-  <td>statA/cm</td>
-  <td colspan="2">Oe</td>
-  <td></td>
-</tr>
-<tr class="even">
-  <td class="dimensions">L<sup>−1</sup> I</td>
-  <td class="dimensions"></td>
-  <td class="dimensions" colspan="2"></td>
-  <td class="dimensions"></td>
 </tr>
 <tr class="odd">
   <td rowspan="2">Capacitance</td>
