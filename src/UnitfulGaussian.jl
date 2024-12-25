@@ -17,4 +17,6 @@ import Unitful: cm, g, s, dyn, erg
 @unit   statH   "statH"     stathenry   1statV*s^2/Fr   false
 @unit   Oe      "Oe"        oersted     1dyn/Mx         false
 
+
+const c_cgs = 29_979_245_800 # speed of light in cm/s
 end
