@@ -261,7 +261,7 @@ table td:last-child, table th:last-child { border-right: none !important; }
 <tr class="even">
   <td class="dimensions">L<sup>−1</sup> I</td>
   <td class="dimensions"></td>
-  <td class="dimensions" colspan="2"></td>
+  <td class="dimensions" colspan="2">T<sup>−1</sup> L<sup>−1/2</sup> M<sup>1/2</sup></td>
   <td class="dimensions"></td>
 </tr>
 <tr class="odd">
