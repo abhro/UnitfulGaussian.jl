@@ -122,8 +122,7 @@ table td:last-child, table th:last-child { border-right: none !important; }
 </tr>
 <tr class="even">
   <td class="dimensions">L<sup>−2</sup> I</td>
-  <td class="dimensions"></td>
-  <td class="dimensions"></td>
+  <td class="dimensions" colspan="2"></td>
   <td class="dimensions"></td>
   <td class="dimensions"></td>
 </tr>
@@ -140,8 +139,7 @@ table td:last-child, table th:last-child { border-right: none !important; }
 </tr>
 <tr class="even">
   <td class="dimensions">T<sup>−3</sup> L<sup>2</sup> M I<sup>−1</sup></td>
-  <td class="dimensions"></td>
-  <td class="dimensions"></td>
+  <td class="dimensions" colspan="2">T<sup>−1</sup> L<sup>1/2</sup> M<sup>1/2</sup></td>
   <td class="dimensions"></td>
   <td class="dimensions"></td>
 </tr>
@@ -158,8 +156,7 @@ table td:last-child, table th:last-child { border-right: none !important; }
 </tr>
 <tr class="even">
   <td class="dimensions">T<sup>−3</sup> L M I<sup>−1</sup></td>
-  <td class="dimensions"></td>
-  <td class="dimensions"></td>
+  <td class="dimensions" colspan="2"></td>
   <td class="dimensions"></td>
   <td class="dimensions"></td>
 </tr>
@@ -192,8 +189,7 @@ table td:last-child, table th:last-child { border-right: none !important; }
 <tr class="even">
   <td class="dimensions">T<sup>−2</sup> M I<sup>−1</sup></td>
   <td></td>
-  <td></td>
-  <td></td>
+  <td colspan="2"></td>
   <td></td>
 </tr>
 <tr class="odd">
@@ -205,8 +201,7 @@ table td:last-child, table th:last-child { border-right: none !important; }
 </tr>
 <tr class="even">
   <td class="dimensions">T L<sup>−2</sup> I</td>
-  <td></td>
-  <td></td>
+  <td colspan="2"></td>
   <td></td>
   <td></td>
 </tr>
@@ -305,7 +300,7 @@ table td:last-child, table th:last-child { border-right: none !important; }
     <span class="nowrap">= Wb/A</span>
     <span class="nowrap">= kg m<sup>2</sup> s<sup>−2</sup> A<sup>−2</sup></span>
   </td>
-  <td>
+  <td colspan="2">
     statH
     <span class="nowrap">= s<sup>2</sup>/cm</span>
   </td>
