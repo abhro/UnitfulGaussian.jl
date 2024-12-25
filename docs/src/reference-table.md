@@ -126,13 +126,13 @@ table td:last-child, table th:last-child { border-right: none !important; }
 <tr class="odd">
   <td rowspan="2">Charge density, <em>ρ</em></td>
   <td class="nowrap">C/m<sup>3</sup></td>
-  <td class="nowrap" colspan="2"></td>
+  <td class="nowrap" colspan="2">Fr/cm<sup>3</sup></td>
   <td class="nowrap"></td>
   <td class="nowrap"></td>
 </tr>
 <tr class="even">
-  <td class="dimensions"></td>
-  <td class="dimensions" colspan="2"></td>
+  <td class="dimensions">T L<sup>−3</sup> I</td>
+  <td class="dimensions" colspan="2">T<sup>−1</sup> L<sup>−3/2</sup> M<sup>1/2</sup></td>
   <td class="dimensions"></td>
   <td class="dimensions"></td>
 </tr>
