@@ -185,6 +185,23 @@ table td:last-child, table th:last-child { border-right: none !important; }
   <td class="dimensions"></td>
 </tr>
 <tr class="odd">
+  <td rowspan="2">The <em>other</em> electric flux, Φ<sub><em>D</em></sub></td>
+  <td>
+    <span class="nowrap">C </span>
+  </td>
+  <td class="dimensions" colspan="2">Fr</td>
+  <td class="dimensions"></td>
+  <td class="dimensions"></td>
+  <td class="dimensions"></td>
+</tr>
+<tr class="even">
+  <td class="dimensions"></td>
+  <td class="dimensions" colspan="2"></td>
+  <td class="dimensions"></td>
+  <td class="dimensions"></td>
+  <td class="dimensions"></td>
+</tr>
+<tr class="odd">
   <td rowspan="2">Magnetic flux density, <strong>B</strong></td>
   <td>tesla (T) = Wb/m<sup>2</sup></td>
   <td>statT</td>
