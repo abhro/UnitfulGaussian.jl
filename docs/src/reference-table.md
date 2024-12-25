@@ -89,7 +89,7 @@ table td:last-child, table th:last-child { border-right: none !important; }
 </tr>
 <tr class="even">
   <td class="dimensions">T I</td>
-  <td class="dimensions" colspan="2">T<sup>−1</sup> L<sup colspan="2">3/2</sup> M<sup>1/2</sup></td>
+  <td class="dimensions" colspan="2">T<sup>−1</sup> L<sup>3/2</sup> M<sup>1/2</sup></td>
   <td class="dimensions">L<sup>1/2</sup> M<sup>1/2</sup></td>
   <td></td>
 </tr>
@@ -212,12 +212,10 @@ table td:last-child, table th:last-child { border-right: none !important; }
   <td class="dimensions" colspan="2"><strong>Fr</strong></td>
   <td class="dimensions"></td>
   <td class="dimensions"></td>
-  <td class="dimensions"></td>
 </tr>
 <tr class="even">
   <td class="dimensions">T<sup>−3</sup> L<sup>3</sup> M I<sup>−1</sup></td>
-  <td class="dimensions"></td>
-  <td class="dimensions"></td>
+  <td class="dimensions" colspan="2">T<sup>−1</sup> L<sup>3/2</sup> M<sup>1/2</sup></td>
   <td class="dimensions"></td>
 </tr>
 <tr class="odd">
