@@ -1,14 +1,14 @@
 module UnitfulGaussian
-import Unitful
-
-function __init__()
-    Unitful.register(UnitfulGaussian)
-end
+using Unitful
 
 import Unitful: @unit, @u_str
 import Unitful: cm, g, s, dyn, erg
 
 export @u_str
+
+function __init__()
+    Unitful.register(UnitfulGaussian)
+end
 
 #       symbol  abbrev.     name        equals          tf     autodocs
 @unit   Fr      "Fr"        franklin    1sqrt(dyn)*cm   false
