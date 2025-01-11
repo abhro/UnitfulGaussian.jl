@@ -5,8 +5,10 @@ function __init__()
     Unitful.register(UnitfulGaussian)
 end
 
-import Unitful: @unit
+import Unitful: @unit, @u_str
 import Unitful: cm, g, s, dyn, erg
+
+export @u_str
 
 #       symbol  abbrev.     name        equals          tf     autodocs
 @unit   Fr      "Fr"        franklin    1sqrt(dyn)*cm   false
@@ -19,4 +21,6 @@ import Unitful: cm, g, s, dyn, erg
 
 
 const c_cgs = 29_979_245_800 # speed of light in cm/s
+
+include("equivalences.jl")
 end
