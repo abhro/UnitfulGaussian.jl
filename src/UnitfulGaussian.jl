@@ -52,7 +52,7 @@ Dimensions: 𝐌^1/2 𝐋^3/2 𝐓^-1.
 See also: `Unitful.Wb`
 
 !!! warning
-    Unitful.jl also defines a maxwell as 10^-8 Wb. This is not dimensionally
+    Unitful.jl also defines a maxwell as 10⁻⁸ Wb. This is not dimensionally
     equivalent to the unit described here.
 """
 @unit   Mx      "Mx"        maxwell     1sqrt(cm^3*g)/s false
@@ -66,7 +66,7 @@ Dimensions: 𝐌^1/2 𝐋^3/2 𝐓^-1.
 See also: `Unitful.T`
 
 !!! warning
-    Unitful.jl also defines a gauss as a 1/10_000 T. This is not dimensionally
+    Unitful.jl also defines a gauss as a 10⁻⁴ T. This is not dimensionally
     equivalent to the unit described here.
 """
 @unit   G       "G"         gauss       1Mx/cm^2        false
