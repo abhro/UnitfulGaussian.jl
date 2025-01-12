@@ -8,7 +8,7 @@ using Unitful: C, V, T, A, Wb
 include("dimensions.jl")
 
 const c_cgs = ustrip(u"cm/s", Unitful.c0) |> Int64 # speed of light in cm/s
-const c_α = c_cgs // Int64(10^8) # = 2.99_792_458 from Griffith's Electrodynamics
+const c_α = c_cgs // Int64(10^10) # = 2.99_792_458 from Griffith's Electrodynamics
 const c_α² = c_α^2
 
 const GD = GaussianDimensions
