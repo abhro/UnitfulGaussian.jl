@@ -22,6 +22,16 @@ See also: `Unitful.C`
 """
 @unit   Fr      "Fr"        franklin    1sqrt(dyn)*cm   false
 """
+    UnitfulGaussian.statA
+
+The statampere, the CGS-ESU and Gaussian unit of current, equal to 1 franklin per second.
+
+Dimension: 𝐌^1/2 𝐋^3/2 𝐓^-2.
+
+See also: `Unitful.A`
+"""
+@unit   statA   "statA"     statA       1Fr/s           false
+"""
     UnitfulGaussian.statV
 
 The statvolt, the CGS-ESU and Gaussian unit of electric potential.
