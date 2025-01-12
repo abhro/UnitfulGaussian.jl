@@ -2,6 +2,7 @@ module GaussianDimensions
 using Unitful: @derived_dimension, 𝐌, 𝐋, 𝐓
 
 @derived_dimension Charge   𝐌^(1//2)*𝐋^( 3//2)*𝐓^-1
+@derived_dimension Current  𝐌^(1//2)*𝐋^( 3//2)*𝐓^-2
 @derived_dimension Voltage  𝐌^(1//2)*𝐋^( 1//2)*𝐓^-1
 @derived_dimension EField   𝐌^(1//2)*𝐋^(-1//2)*𝐓^-1
 @derived_dimension DField   𝐌^(1//2)*𝐋^(-1//2)*𝐓^-1
