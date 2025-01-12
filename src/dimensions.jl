@@ -1,9 +1,23 @@
-using Unitful: @derived_dimension
+module GaussianDimensions
+using Unitful: @derived_dimension, 𝐌, 𝐋, 𝐓
 
-@derived_dimension GaussianCharge       𝐌^(1//2)*𝐋^(3//2)*𝐓^-1
-@derived_dimension GaussianPotential    𝐌^(1//2)*𝐋^(1//2)*𝐓^-1
-# TODO insert powers here. E and D field should have same dimensions
-@derived_dimension GaussianEField       𝐌^()*𝐋^()*𝐓^()
-@derived_dimension GaussianDField       𝐌^()*𝐋^()*𝐓^()
-@derived_dimension GaussianBField       𝐌^()*𝐋^()*𝐓^()
-@derived_dimension GaussianHField       𝐌^()*𝐋^()*𝐓^()
+@derived_dimension Charge   𝐌^(1//2)*𝐋^( 3//2)*𝐓^-1
+@derived_dimension Voltage  𝐌^(1//2)*𝐋^( 1//2)*𝐓^-1
+@derived_dimension EField   𝐌^(1//2)*𝐋^(-1//2)*𝐓^-1
+@derived_dimension DField   𝐌^(1//2)*𝐋^(-1//2)*𝐓^-1
+@derived_dimension BField   𝐌^(1//2)*𝐋^(-1//2)*𝐓^-1
+@derived_dimension HField   𝐌^(1//2)*𝐋^(-1//2)*𝐓^-1
+@derived_dimension EFlux    𝐌^(1//2)*𝐋^( 3//2)*𝐓^-1
+@derived_dimension DFlux    𝐌^(1//2)*𝐋^( 3//2)*𝐓^-1
+@derived_dimension BFlux    𝐌^(1//2)*𝐋^( 3//2)*𝐓^-1
+@derived_dimension HFlux    𝐌^(1//2)*𝐋^( 3//2)*𝐓^-1
+end
+
+
+module ISQDimensions
+using Unitful: @derived_dimension, 𝐌, 𝐋, 𝐓, 𝐈, MagneticFlux
+const              BFlux =  MagneticFlux
+@derived_dimension EFlux    𝐌*𝐋^3*𝐓^-3*𝐈^-1
+@derived_dimension DFlux    𝐈*𝐓
+@derived_dimension HFlux    𝐈*𝐋
+end
