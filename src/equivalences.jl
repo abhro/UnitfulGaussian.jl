@@ -13,6 +13,11 @@ const c_α² = c_α^2
 
 const GD = GaussianDimensions
 
+"""
+    ChargeEquivalence <: Equivalence
+
+Equivalence type for converting between franklins and coulombs.
+"""
 struct ChargeEquivalence <: Equivalence end
 @eqrelation ChargeEquivalence GD.Charge/Charge = c_cgs÷10 * Fr/C
 export ChargeEquivalence
