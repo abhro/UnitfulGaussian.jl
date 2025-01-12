@@ -20,7 +20,5 @@ end
 @unit   Oe      "Oe"        oersted     1dyn/Mx         false
 
 
-const c_cgs = 29_979_245_800 # speed of light in cm/s
-
 include("equivalences.jl")
 end
