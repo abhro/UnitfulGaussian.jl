@@ -2,37 +2,49 @@
 
 
 using UnitfulEquivalences
-using Unitful: Charge, Voltage
-using Unitful: C, V, T
+using Unitful: Charge, Voltage, Current, EField, BField, DField, HField
+using Unitful: C, V, T, A, Wb
 
 include("dimensions.jl")
 
-const c_cgs = Int64(29_979_245_800) # speed of light in cm/s
-const c_α = Int64(299_792_458) // Int64(10^8) # from Griffith's Electrodynamics
+const c_cgs = ustrip(u"cm/s", Unitful.c0) |> Int64 # speed of light in cm/s
+const c_α = c_cgs // Int64(10^8) # = 2.99_792_458 from Griffith's Electrodynamics
 const c_α² = c_α^2
 
 const GD = GaussianDimensions
+const ISQD = ISQDimensions
 
 """
     ChargeEquivalence <: Equivalence
 
-Equivalence type for converting between franklins and coulombs.
+Equivalence type for converting between franklins and coulombs (charge),
+and between statamperes and amperes (current).
 """
 struct ChargeEquivalence <: Equivalence end
 @eqrelation ChargeEquivalence GD.Charge/Charge = c_cgs÷10 * Fr/C
+@eqrelation ChargeEquivalence GD.Current/Current = c_cgs÷10 * statA/A
 export ChargeEquivalence
 
 struct ElectricFluxEquivalence <: Equivalence end
-@eqrelation ElectricFluxEquivalence GD.Charge/Charge = c_cgs÷10 * Fr/C
+@eqrelation ElectricFluxEquivalence GD.EFlux/ISQD.EFlux = error()
+@eqrelation ElectricFluxEquivalence GD.DFlux/ISQD.DFlux = error()
+export ElectricFluxEquivalence
 
 struct ElectricFieldEquivalence <: Equivalence end
-
+@eqrelation ElectricFieldEquivalence EField/GD.EField = c_α*10^4*(statV/cm)/(V/m)
+@eqrelation ElectricFieldEquivalence GD.DField/DField = 4π*c_α*10^5*(Fr/cm^2)/(C/m^2)
+export ElectricFieldEquivalence
 
 struct PotentialEquivalence <: Equivalence end
 @eqrelation PotentialEquivalence Voltage/GD.Voltage = c_α*100 * V/statV
 export PotentialEquivalence
 
-
-
 struct MagneticFieldEquivalence <: Equivalence end
+@eqrelation MagneticFieldEquivalence BField/GD.BField = error()
+@eqrelation MagneticFieldEquivalence GD.HField/HField = (4pi*10^-3)Oe/(A/m)
+export MagneticFieldEquivalence
+
 struct MagneticFluxEquivalence <: Equivalence end
+@eqrelation MagneticFluxEquivalence GD.BFlux/ISQD.BFlux = (10^8)Mx/Wb
+@eqrelation MagneticFluxEquivalence GD.HFlux/ISQD.HFlux = error()
+export MagneticFluxEquivalence
