@@ -40,6 +40,10 @@ magnetic B-field).
 Dimensions: 𝐌^1/2 𝐋^3/2 𝐓^-1.
 
 See also: `Unitful.Wb`
+
+!!! warning
+    Unitful.jl also defines a maxwell as 10^-8 Wb. This is not dimensionally
+    equivalent to the unit described here.
 """
 @unit   Mx      "Mx"        maxwell     1sqrt(cm^3*g)/s false
 """
@@ -50,8 +54,28 @@ The gauss, the CGS-EMU and Gaussian unit of magnetic B field.
 Dimensions: 𝐌^1/2 𝐋^3/2 𝐓^-1.
 
 See also: `Unitful.T`
+
+!!! warning
+    Unitful.jl also defines a gauss as a 1/10_000 T. This is not dimensionally
+    equivalent to the unit described here.
 """
 @unit   G       "G"         gauss       1Mx/cm^2        false
+"""
+    UnitfulGaussian.Oe
+
+The oersted, the CGS-EMU and Gaussian unit of the magnetic H field. It is
+dimensionally equivalent to the [gauss (G)](@ref UnitfulGaussian.G). The
+corresponding SI unit for the H field is A/m.
+
+Dimensions: 𝐌^1/2 𝐋^3/2 𝐓^-1.
+
+See also: `Unitful.A`
+
+!!! warning
+    Unitful.jl also defines a oersted as 1000/4π A/m. This is not dimensionally
+    equivalent to the unit described here.
+"""
+@unit   Oe      "Oe"        oersted     1dyn/Mx         false
 """
     UnitfulGaussian.statF
 
@@ -73,18 +97,6 @@ Dimensions: 𝐋^-1 𝐓^2
 See also: `Unitful.H`
 """
 @unit   statH   "statH"     stathenry   1statV*s^2/Fr   false
-"""
-    UnitfulGaussian.Oe
-
-The oersted, the CGS-EMU and Gaussian unit of the magnetic H field. It is
-dimensionally equivalent to the [gauss (G)](@ref UnitfulGaussian.G). The
-corresponding SI unit for the H field is A/m.
-
-Dimensions: 𝐌^1/2 𝐋^3/2 𝐓^-1.
-
-See also: `Unitful.A`
-"""
-@unit   Oe      "Oe"        oersted     1dyn/Mx         false
 
 
 include("equivalences.jl")
