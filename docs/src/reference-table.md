@@ -430,9 +430,8 @@ table td:last-child, table th:last-child { border-right: none !important; }
   </td>
   <td class="nowrap">statA⋅cm<sup>2</sup></td>
   <td colspan="2">
-    <span class="nowrap">erg/Gb</span>
-    <span class="nowrap">= 4π erg/Bi</span>
-    <span class="nowrap">= 4π g<sup>1/2</sup> cm<sup>3/2</sup> s<sup>−1</sup></span>
+    <span class="nowrap">erg/G</span>
+    <span class="nowrap">= g<sup>1/2</sup> cm<sup>5/2</sup> s<sup>−1</sup></span>
   </td>
   <td class="nowrap"></td>
 </tr>
