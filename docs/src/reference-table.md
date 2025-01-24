@@ -319,7 +319,7 @@ table td:last-child, table th:last-child { border-right: none !important; }
 </tr>
 
 <tr class="odd">
-  <td rowspan="2">Current density, <strong>J</strong></td>
+  <td rowspan="2">Current density, <strong>J</strong>,&nbsp;<strong>j</strong></td>
   <td class="nowrap">A/m<sup>2</sup></td>
   <td class="nowrap" colspan="2">statA/cm<sup>2</sup></td>
   <td class="nowrap">Bi/cm<sup>2</sup></td>
