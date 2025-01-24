@@ -438,7 +438,22 @@ table td:last-child, table th:last-child { border-right: none !important; }
 <tr class="even">
   <td class="dimensions">L<sup>2</sup> I</td>
   <td class="dimensions">M<sup>1/2</sup> L<sup>7/2</sup> T<sup>−2</sup></td>
-  <td class="dimensions" colspan="2">M<sup>1/2</sup> L<sup>3/2</sup> T<sup>−1</sup></td>
+  <td class="dimensions" colspan="2">M<sup>1/2</sup> L<sup>5/2</sup> T<sup>−1</sup></td>
+  <td class="dimensions"></td>
+</tr>
+<tr class="odd">
+  <td rowspan="2">Magnetization, <strong>M</strong>, 4π<strong>M</strong></td>
+  <td class="nowrap">A/m</td>
+  <td class="nowrap"></td>
+  <td colspan="2">
+    <span class="nowrap">erg/(G⋅cm<sup>3</sup>)</span>
+  </td>
+  <td class="nowrap"></td>
+</tr>
+<tr class="even">
+  <td class="dimensions">L<sup>−1</sup> I</td>
+  <td class="dimensions"></td>
+  <td class="dimensions" colspan="2"></td>
   <td class="dimensions"></td>
 </tr>
 <tr class="odd">
