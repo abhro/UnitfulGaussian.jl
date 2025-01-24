@@ -469,6 +469,32 @@ table td:last-child, table th:last-child { border-right: none !important; }
   <td class="dimensions" colspan="2">1</td>
   <td class="dimensions"></td>
 </tr>
+<tr class="odd">
+  <td rowspan="2">Magnetomotive force, <em>ℱ</em></td>
+  <td class="nowrap">A</td>
+  <td class="nowrap"></td>
+  <td colspan="2">Gi</td>
+  <td class="nowrap"></td>
+</tr>
+<tr class="even">
+  <td class="dimensions">I</td>
+  <td class="dimensions"></td>
+  <td class="dimensions" colspan="2"></td>
+  <td class="dimensions"></td>
+</tr>
+<tr class="odd">
+  <td rowspan="2">Magnetic reluctance, <em>ℛ</em></td>
+  <td class="nowrap">H<sup>−1</sup></td>
+  <td class="nowrap"></td>
+  <td colspan="2">Gi/Mx</td>
+  <td class="nowrap"></td>
+</tr>
+<tr class="even">
+  <td class="dimensions"></td>
+  <td class="dimensions"></td>
+  <td class="dimensions" colspan="2"></td>
+  <td class="dimensions"></td>
+</tr>
 </tbody>
 </table>
 ```
