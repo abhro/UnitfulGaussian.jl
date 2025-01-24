@@ -422,8 +422,12 @@ table td:last-child, table th:last-child { border-right: none !important; }
   <td class="dimensions"></td>
 </tr>
 <tr class="odd">
-  <td rowspan="2">Magnetic dipole moment, <strong>μ</strong></td>
-  <td class="nowrap">A⋅m<sup>2</sup></td>
+  <td rowspan="2">Magnetic dipole moment, <strong>μ</strong>, <strong>m</strong></td>
+  <td>
+    <span class="nowrap">A⋅m<sup>2</sup></span>
+    <span class="nowrap">= N⋅m/T</span>
+    <span class="nowrap">= J/T</span>
+  </td>
   <td class="nowrap">statA⋅cm<sup>2</sup></td>
   <td colspan="2">
     <span class="nowrap">erg/Gb</span>
