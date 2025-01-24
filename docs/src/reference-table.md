@@ -74,14 +74,6 @@ table td:last-child, table th:last-child { border-right: none !important; }
 ## Electric
 ```@raw html
 <table style="width:100%;">
-<colgroup>
-<col style="width: 12%" />
-<col style="width: 15%" />
-<col style="width: 31%" />
-<col style="width: 8%" />
-<col style="width: 25%" />
-<col style="width: 6%" />
-</colgroup>
 <thead>
 <tr class="header">
   <th>Quantity</th>
@@ -285,14 +277,6 @@ table td:last-child, table th:last-child { border-right: none !important; }
 ## Magnetic
 ```@raw html
 <table style="width:100%;">
-<colgroup>
-<col style="width: 12%" />
-<col style="width: 15%" />
-<col style="width: 31%" />
-<col style="width: 8%" />
-<col style="width: 25%" />
-<col style="width: 6%" />
-</colgroup>
 <thead>
 <tr class="header">
   <th>Quantity</th>
@@ -474,14 +458,6 @@ table td:last-child, table th:last-child { border-right: none !important; }
 ## Other
 ```@raw html
 <table style="width:100%;">
-<colgroup>
-<col style="width: 12%" />
-<col style="width: 15%" />
-<col style="width: 31%" />
-<col style="width: 8%" />
-<col style="width: 25%" />
-<col style="width: 6%" />
-</colgroup>
 <thead>
 <tr class="header">
   <th>Quantity</th>
