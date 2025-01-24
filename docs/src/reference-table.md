@@ -490,7 +490,7 @@ table td:last-child, table th:last-child { border-right: none !important; }
   <td class="nowrap"></td>
 </tr>
 <tr class="even">
-  <td class="dimensions"></td>
+  <td class="dimensions">M<sup>−1</sup> L<sup>−2</sup> T<sup>2</sup> I<sup>2</sup></td>
   <td class="dimensions"></td>
   <td class="dimensions" colspan="2"></td>
   <td class="dimensions"></td>
