@@ -96,6 +96,7 @@ table td:last-child, table th:last-child { border-right: none !important; }
     <span class="nowrap">= <strong>statcoulomb (statC)</strong></span>
     <span class="nowrap">= esu charge</span>
     <span class="nowrap">= dyn<sup>1/2</sup>⋅cm</span>
+    <span class="nowrap">= erg<sup>1/2</sup>⋅cm<sup>1/2</sup></span>
     <span class="nowrap">= g<sup>1/2</sup> cm<sup>3/2</sup> s<sup>−1</sup></span>
   </td>
   <td>
