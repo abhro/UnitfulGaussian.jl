@@ -8,19 +8,21 @@ links = InterLinks(
     "Unitful" => "https://painterqubits.github.io/Unitful.jl/stable/objects.inv",
 )
 
+pages = [
+    "Home" => "index.md",
+    "Reference table" => "reference-table.md",
+    "Closures" => "closures.md",
+]
+
 makedocs(;
     modules = [UnitfulGaussian],
     authors = "Abhro R. and contributors",
     sitename = "UnitfulGaussian.jl",
     format = Documenter.HTML(;
-        edit_link="main",
-        assets=String[],
+        edit_link = "main",
+        assets = String[],
     ),
-    pages = [
-        "Home" => "index.md",
-        "Reference table" => "reference-table.md",
-        "Closures" => "closures.md",
-    ],
+    pages,
     plugins = [links],
 )
 
