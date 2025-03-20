@@ -1,16 +1,17 @@
 name: CI
 on:
   push:
-    branches:
-      - main
+    branches: [main]
     tags: ['*']
   pull_request:
   workflow_dispatch:
+
 concurrency:
   # Skip intermediate builds: always.
   # Cancel intermediate builds: only if it is a pull request build.
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: ${{ startsWith(github.ref, 'refs/pull/') }}
+
 jobs:
   test:
     name: Julia ${{ matrix.version }} - ${{ matrix.os }} - ${{ matrix.arch }} - ${{ github.event_name }}
@@ -22,14 +23,9 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        version:
-          - '1.11'
-          - '1.6'
-          - 'pre'
-        os:
-          - ubuntu-latest
-        arch:
-          - x64
+        version: ['1', 'min', 'lts', 'nightly', 'pre']
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        arch: [x64]
     steps:
       - uses: actions/checkout@v4
       - uses: julia-actions/setup-julia@v2
@@ -44,7 +40,3 @@ jobs:
         with:
           files: lcov.info
           token: ${{ secrets.CODECOV_TOKEN }}
-          fail_ci_if_error: false
-      - uses: julia-actions/julia-uploadcoveralls@v1
-        env:
-          COVERALLS_TOKEN: ${{ secrets.COVERALLS_TOKEN }}
