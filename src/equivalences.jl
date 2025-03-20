@@ -5,6 +5,9 @@ using UnitfulEquivalences
 using Unitful: Charge, Voltage, Current, EField, BField, DField, HField
 using Unitful: C, V, T, A, Wb
 
+export ChargeEquivalence, ElectricFluxEquivalence, ElectricFieldEquivalence,
+       PotentialEquivalence, MagneticFieldEquivalence, MagneticFluxEquivalence
+
 include("dimensions.jl")
 
 const c_cgs = ustrip(u"cm/s", Unitful.c0) |> Int64 # speed of light in cm/s
@@ -23,28 +26,52 @@ and between statamperes and amperes (current).
 struct ChargeEquivalence <: Equivalence end
 @eqrelation ChargeEquivalence GD.Charge/Charge = c_cgs÷10 * Fr/C
 @eqrelation ChargeEquivalence GD.Current/Current = c_cgs÷10 * statA/A
-export ChargeEquivalence
 
+"""
+    ElectricFluxEquivalence <: Equivalence
+
+Equivalence type for converting between ??? and ??? (???),
+and between ???and ??? (???).
+"""
 struct ElectricFluxEquivalence <: Equivalence end
 @eqrelation ElectricFluxEquivalence GD.EFlux/ISQD.EFlux = error()
 @eqrelation ElectricFluxEquivalence GD.DFlux/ISQD.DFlux = error()
-export ElectricFluxEquivalence
 
+"""
+    ElectricFieldEquivalence <: Equivalence
+
+Equivalence type for converting between ??? and ??? (???),
+and between ??? and ??? (???).
+"""
 struct ElectricFieldEquivalence <: Equivalence end
 @eqrelation ElectricFieldEquivalence EField/GD.EField = c_α*10^4*(statV/cm)/(V/m)
 @eqrelation ElectricFieldEquivalence GD.DField/DField = 4π*c_α*10^5*(Fr/cm^2)/(C/m^2)
-export ElectricFieldEquivalence
 
+"""
+    PotentialEquivalence <: Equivalence
+
+Equivalence type for converting between volts and statvolts (potential difference)
+and between ??? and ??? (???).
+"""
 struct PotentialEquivalence <: Equivalence end
 @eqrelation PotentialEquivalence Voltage/GD.Voltage = c_α*100 * V/statV
-export PotentialEquivalence
 
+"""
+    MagneticFieldEquivalence <: Equivalence
+
+Equivalence type for converting between ??? and ??? (???),
+and between ??? and ??? (???).
+"""
 struct MagneticFieldEquivalence <: Equivalence end
 @eqrelation MagneticFieldEquivalence BField/GD.BField = error()
 @eqrelation MagneticFieldEquivalence GD.HField/HField = (4pi*10^-3)Oe/(A/m)
-export MagneticFieldEquivalence
 
+"""
+    MagneticFluxEquivalence <: Equivalence
+
+Equivalence type for converting between ??? and ??? (???),
+and between ?? and ??? (???).
+"""
 struct MagneticFluxEquivalence <: Equivalence end
 @eqrelation MagneticFluxEquivalence GD.BFlux/ISQD.BFlux = (10^8)Mx/Wb
 @eqrelation MagneticFluxEquivalence GD.HFlux/ISQD.HFlux = error()
-export MagneticFluxEquivalence
