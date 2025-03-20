@@ -74,7 +74,7 @@ See also: [`Unitful.T`](@extref Unitful Tesla)
     UnitfulGaussian.Oe
 
 The oersted, the CGS-EMU and Gaussian unit of the magnetic H field. It is
-dimensionally equivalent to the [gauss (G)](@ref UnitfulGaussian.G). The
+dimensionally equivalent to the [gauss (G)](@ref UnitfulGaussian.G). The
 corresponding SI unit for the H field is A/m.
 
 Dimensions: 𝐌^1/2 𝐋^3/2 𝐓^-1.
