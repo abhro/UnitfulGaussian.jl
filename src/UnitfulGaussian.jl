@@ -18,7 +18,7 @@ The franklin, the CGS-ESU and Gaussian unit of charge.
 
 Dimension: 𝐌^1/2 𝐋^3/2 𝐓^-1.
 
-See also: `Unitful.C`
+See also: [`Unitful.C`](@extref Coulomb)
 """
 @unit   Fr      "Fr"        franklin    1sqrt(dyn)*cm   false
 """
@@ -28,7 +28,7 @@ The statampere, the CGS-ESU and Gaussian unit of current, equal to 1 franklin pe
 
 Dimension: 𝐌^1/2 𝐋^3/2 𝐓^-2.
 
-See also: `Unitful.A`
+See also: [`Unitful.A`](@extref Ampere)
 """
 @unit   statA   "statA"     statA       1Fr/s           false
 """
@@ -38,7 +38,7 @@ The statvolt, the CGS-ESU and Gaussian unit of electric potential.
 
 Dimensions: 𝐌^1/2 𝐋^1/2 𝐓^-1.
 
-See also: `Unitful.V`
+See also: [`Unitful.V`](@extref Unitful Volt)
 """
 @unit   statV   "statV"     statvolt    1erg/Fr         false
 """
@@ -49,7 +49,7 @@ magnetic B-field).
 
 Dimensions: 𝐌^1/2 𝐋^3/2 𝐓^-1.
 
-See also: `Unitful.Wb`
+See also: [`Unitful.Wb`](@ref Unitful Weber)
 
 !!! warning
     Unitful.jl also defines a maxwell as 10⁻⁸ Wb. This is not dimensionally
@@ -63,7 +63,7 @@ The gauss, the CGS-EMU and Gaussian unit of magnetic B field.
 
 Dimensions: 𝐌^1/2 𝐋^3/2 𝐓^-1.
 
-See also: `Unitful.T`
+See also: [`Unitful.T`](@extref Unitful Tesla)
 
 !!! warning
     Unitful.jl also defines a gauss as a 10⁻⁴ T. This is not dimensionally
@@ -79,7 +79,7 @@ corresponding SI unit for the H field is A/m.
 
 Dimensions: 𝐌^1/2 𝐋^3/2 𝐓^-1.
 
-See also: `Unitful.A`
+See also: [`Unitful.A`](@extref Unitful Ampere)
 
 !!! warning
     Unitful.jl also defines a oersted as 1000/4π A/m. This is not dimensionally
@@ -94,7 +94,7 @@ The statfarad, the CGS-ESU and Gaussian unit of capacitance. It is equal to
 
 Dimensions: 𝐋
 
-See also: `Unitful.F`
+See also: [`Unitful.F`](@extref Unitful Farad)
 """
 @unit   statF   "statF"     statfarad   1cm             false
 """
@@ -104,10 +104,9 @@ The stathenry, the CGS-ESU and Gaussian unit of inductance. It is equal to 1s^2/
 
 Dimensions: 𝐋^-1 𝐓^2
 
-See also: `Unitful.H`
+See also: [`Unitful.H`](@extref Unitful Henry)
 """
 @unit   statH   "statH"     stathenry   1statV*s^2/Fr   false
-
 
 include("equivalences.jl")
 end

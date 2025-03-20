@@ -5,7 +5,7 @@ using DocumenterInterLinks
 DocMeta.setdocmeta!(UnitfulGaussian, :DocTestSetup, :(using UnitfulGaussian); recursive=true)
 
 links = InterLinks(
-    "Unitful" => "https://painterqubits.github.io/Unitful.jl/stable/",
+    "Unitful" => "https://painterqubits.github.io/Unitful.jl/stable/objects.inv",
 )
 
 makedocs(;
