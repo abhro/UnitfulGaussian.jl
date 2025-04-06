@@ -70,8 +70,6 @@ struct MagneticFieldEquivalence <: Equivalence end
     MagneticFluxEquivalence <: Equivalence
 
 Equivalence type for converting between ??? and ??? (???),
-and between ?? and ??? (???).
 """
 struct MagneticFluxEquivalence <: Equivalence end
 @eqrelation MagneticFluxEquivalence GD.BFlux/ISQD.BFlux = (10^8)Mx/Wb
-@eqrelation MagneticFluxEquivalence GD.HFlux/ISQD.HFlux = error()
