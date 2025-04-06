@@ -62,8 +62,8 @@ Equivalence type for converting between tesla and gauss (B-field),
 and between A/m and oersted (H-field).
 """
 struct MagneticFieldEquivalence <: Equivalence end
-@eqrelation MagneticFieldEquivalence BField/GD.BField = error()
-@eqrelation MagneticFieldEquivalence GD.HField/HField = (4pi*10^-3)Oe/(A/m)
+@eqrelation MagneticFieldEquivalence BField/GD.BField = 10^4 * G/T
+@eqrelation MagneticFieldEquivalence GD.HField/HField = (4π*10^-3)Oe/(A/m)
 
 """
     MagneticFluxEquivalence <: Equivalence
