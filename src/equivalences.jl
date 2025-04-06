@@ -30,8 +30,8 @@ struct ChargeEquivalence <: Equivalence end
 """
     ElectricFluxEquivalence <: Equivalence
 
-Equivalence type for converting between ??? and ??? (???),
-and between ???and ??? (???).
+Equivalence type for converting between V⋅m and statV⋅cm (electric field flux),
+and between coulombs and franklins (displacement field flux).
 """
 struct ElectricFluxEquivalence <: Equivalence end
 @eqrelation ElectricFluxEquivalence GD.EFlux/ISQD.EFlux = error()
@@ -40,8 +40,8 @@ struct ElectricFluxEquivalence <: Equivalence end
 """
     ElectricFieldEquivalence <: Equivalence
 
-Equivalence type for converting between ??? and ??? (???),
-and between ??? and ??? (???).
+Equivalence type for converting between V/m and statV/cm (E-field),
+and between C/m² and Fr/cm² (D-field).
 """
 struct ElectricFieldEquivalence <: Equivalence end
 @eqrelation ElectricFieldEquivalence EField/GD.EField = c_α*10^4*(statV/cm)/(V/m)
@@ -50,8 +50,7 @@ struct ElectricFieldEquivalence <: Equivalence end
 """
     PotentialEquivalence <: Equivalence
 
-Equivalence type for converting between volts and statvolts (potential difference)
-and between ??? and ??? (???).
+Equivalence type for converting between volts and statvolts (potential difference).
 """
 struct PotentialEquivalence <: Equivalence end
 @eqrelation PotentialEquivalence Voltage/GD.Voltage = c_α*100 * V/statV
@@ -59,8 +58,8 @@ struct PotentialEquivalence <: Equivalence end
 """
     MagneticFieldEquivalence <: Equivalence
 
-Equivalence type for converting between ??? and ??? (???),
-and between ??? and ??? (???).
+Equivalence type for converting between tesla and gauss (B-field),
+and between A/m and oersted (H-field).
 """
 struct MagneticFieldEquivalence <: Equivalence end
 @eqrelation MagneticFieldEquivalence BField/GD.BField = error()
@@ -69,7 +68,7 @@ struct MagneticFieldEquivalence <: Equivalence end
 """
     MagneticFluxEquivalence <: Equivalence
 
-Equivalence type for converting between ??? and ??? (???),
+Equivalence type for converting between weber and maxwell (B-field flux).
 """
 struct MagneticFluxEquivalence <: Equivalence end
 @eqrelation MagneticFluxEquivalence GD.BFlux/ISQD.BFlux = (10^8)Mx/Wb
