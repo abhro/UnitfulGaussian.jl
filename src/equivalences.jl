@@ -34,8 +34,8 @@ Equivalence type for converting between V⋅m and statV⋅cm (electric field flu
 and between coulombs and franklins (displacement field flux).
 """
 struct ElectricFluxEquivalence <: Equivalence end
-@eqrelation ElectricFluxEquivalence GD.EFlux/ISQD.EFlux = error()
-@eqrelation ElectricFluxEquivalence GD.DFlux/ISQD.DFlux = error()
+@eqrelation ElectricFluxEquivalence GD.EFlux/ISQD.EFlux = error() # TODO
+@eqrelation ElectricFluxEquivalence GD.DFlux/ISQD.DFlux = 4π*c_α*10^9 * Fr/C
 
 """
     ElectricFieldEquivalence <: Equivalence
