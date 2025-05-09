@@ -1,9 +1,8 @@
 # SPDX-License-Identifier: MIT
 
-
 using UnitfulEquivalences
 using Unitful: Charge, Voltage, Current, EField, BField, DField, HField
-using Unitful: C, V, T, A, Wb
+using Unitful: C, V, T, A, Wb, m
 
 export ChargeEquivalence, ElectricFluxEquivalence, ElectricFieldEquivalence,
        PotentialEquivalence, MagneticFieldEquivalence, MagneticFluxEquivalence
@@ -44,8 +43,8 @@ Equivalence type for converting between V/m and statV/cm (E-field),
 and between C/m² and Fr/cm² (D-field).
 """
 struct ElectricFieldEquivalence <: Equivalence end
-@eqrelation ElectricFieldEquivalence EField/GD.EField = c_α*10^4*(statV/cm)/(V/m)
-@eqrelation ElectricFieldEquivalence GD.DField/DField = 4π*c_α*10^5*(Fr/cm^2)/(C/m^2)
+@eqrelation ElectricFieldEquivalence EField/GD.EField = c_α*10^4*(V/m)/(statV/cm)
+@eqrelation ElectricFieldEquivalence DField/GD.DField = 4π*c_α*10^5*(C/m^2)/(Fr/cm^2)
 
 """
     PotentialEquivalence <: Equivalence
@@ -62,7 +61,7 @@ Equivalence type for converting between tesla and gauss (B-field),
 and between A/m and oersted (H-field).
 """
 struct MagneticFieldEquivalence <: Equivalence end
-@eqrelation MagneticFieldEquivalence BField/GD.BField = 10^4 * G/T
+@eqrelation MagneticFieldEquivalence GD.BField/BField = 10^4 * G/T
 @eqrelation MagneticFieldEquivalence GD.HField/HField = (4π*10^-3)Oe/(A/m)
 
 """
