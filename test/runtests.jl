@@ -1,7 +1,7 @@
 using Test
 using Aqua
 using Unitful, UnitfulGaussian, UnitfulEquivalences
-using Unitful: q, ε0, μ0, C, V, T, erg, m, cm
+using Unitful: q, ε0, μ0, C, V, T, m, cm, dyn, erg
 using UnitfulGaussian: Fr, G, statV
 
 @testset "UnitfulGaussian.jl" begin
@@ -11,6 +11,14 @@ using UnitfulGaussian: Fr, G, statV
 
     @testset "Test elementary charge" begin
         @test uconvert(Fr, q, ChargeEquivalence()) ≈ 4.803204e-10Fr rtol=1e-6
+    end
+
+    @testset "Test Coulomb's law" begin
+        q₁ = 1Fr
+        q₂ = 1Fr
+        r = 1cm
+        F = 1dyn
+        @test q₁*q₂/r^2 == F
     end
 
     @testset "Test conversions" begin
