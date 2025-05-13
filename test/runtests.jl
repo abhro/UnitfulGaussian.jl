@@ -34,6 +34,8 @@ using UnitfulGaussian: Fr, G, statV
         @test uconvert(Fr, 1C, ChargeEquivalence()) ≈ 299_792_4580Fr
         @test uconvert(C, 1Fr, ChargeEquivalence()) ≈ 3.335640e-10C rtol=1e-6
 
+        @test 1erg/cm^3 == 1G^2
+
         # TODO other conversions
     end
 
