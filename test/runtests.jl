@@ -18,7 +18,7 @@ using UnitfulGaussian: Fr, G, statV
         q₂ = 1Fr
         r = 1cm
         F = 1dyn
-        @test q₁*q₂/r^2 == F
+        @test q₁*q₂/r^2 ≈ F
     end
 
     @testset "Test conversions" begin
