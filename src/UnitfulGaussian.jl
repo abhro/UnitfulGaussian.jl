@@ -109,4 +109,6 @@ See also: [`Unitful.H`](@extref Unitful Henry)
 @unit   statH   "statH"     stathenry   1statV*s^2/Fr   false
 
 include("equivalences.jl")
+
+const qcgs = uconvert(Fr, Unitful.q, ChargeEquivalence())
 end
