@@ -27,6 +27,16 @@ struct ChargeEquivalence <: Equivalence end
 @eqrelation ChargeEquivalence GD.Current/Current = c_cgs÷10 * statA/A
 
 """
+    ElectricFieldEquivalence <: Equivalence
+
+Equivalence type for converting between V/m and statV/cm (E-field),
+and between C/m² and Fr/cm² (D-field).
+"""
+struct ElectricFieldEquivalence <: Equivalence end
+@eqrelation ElectricFieldEquivalence EField/GD.EField = c_α*10^4*(V/m)/(statV/cm)
+@eqrelation ElectricFieldEquivalence GD.DField/DField = 4π*c_α*10^5*(Fr/cm^2)/(C/m^2)
+
+"""
     ElectricFluxEquivalence <: Equivalence
 
 Equivalence type for converting between V⋅m and statV⋅cm (electric field flux),
@@ -35,16 +45,6 @@ and between coulombs and franklins (displacement field flux).
 struct ElectricFluxEquivalence <: Equivalence end
 @eqrelation ElectricFluxEquivalence GD.EFlux/ISQD.EFlux = error() # TODO
 @eqrelation ElectricFluxEquivalence GD.DFlux/ISQD.DFlux = 4π*c_α*10^9 * Fr/C
-
-"""
-    ElectricFieldEquivalence <: Equivalence
-
-Equivalence type for converting between V/m and statV/cm (E-field),
-and between C/m² and Fr/cm² (D-field).
-"""
-struct ElectricFieldEquivalence <: Equivalence end
-@eqrelation ElectricFieldEquivalence EField/GD.EField = c_α*10^4*(V/m)/(statV/cm)
-@eqrelation ElectricFieldEquivalence DField/GD.DField = 4π*c_α*10^5*(C/m^2)/(Fr/cm^2)
 
 """
     PotentialEquivalence <: Equivalence
