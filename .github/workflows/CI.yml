@@ -29,19 +29,19 @@ jobs:
         include:
           - os: macos-latest
             arch: aarch64
-            version: '1'
+            julia-version: '1'
           - os: macos-latest
             arch: aarch64
-            version: 'min'
+            julia-version: 'min'
           - os: macos-latest
             arch: aarch64
-            version: 'lts'
+            julia-version: 'lts'
           - os: macos-latest
             arch: aarch64
-            version: 'nightly'
+            julia-version: 'nightly'
           - os: macos-latest
             arch: aarch64
-            version: 'pre'
+            julia-version: 'pre'
     steps:
       - uses: actions/checkout@v4
       - uses: julia-actions/setup-julia@v2
