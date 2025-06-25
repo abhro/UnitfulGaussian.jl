@@ -43,7 +43,8 @@ Equivalence type for converting between V⋅m and statV⋅cm (electric field flu
 and between coulombs and franklins (displacement field flux).
 """
 struct ElectricFluxEquivalence <: Equivalence end
-@eqrelation ElectricFluxEquivalence GD.EFlux/ISQD.EFlux = error() # TODO
+@eqrelation ElectricFluxEquivalence GD.EFlux/ISQD.EFlux =
+    error("A sufficiently consensual unit for E-field flux does not exist in the Gaussian system")
 @eqrelation ElectricFluxEquivalence GD.DFlux/ISQD.DFlux = 4π*c_α*10^9 * Fr/C
 
 """

@@ -67,6 +67,11 @@ using UnitfulGaussian: qcgs, Fr, G, statA, statV, Oe, Mx
         @test uconvert(Wb, 1Mx, MagneticFluxEquivalence()) ≈ (10^-8)Wb
 
         @test 1erg/cm^3 == 1G^2
+
+        # We can derive the Gaussian unit of E-flux as statV⋅cm, but it's not
+        # used anywhere that we could find
+        @test_throws ErrorException uconvert(V*m, 1statV*cm, ElectricFluxEquivalence())
+        @test_throws ErrorException uconvert(statV*cm, 1V*m, ElectricFluxEquivalence())
     end
 
     @testset "Energy density of an electric field" begin
