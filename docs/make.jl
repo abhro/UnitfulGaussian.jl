@@ -12,6 +12,7 @@ pages = [
     "Home" => "index.md",
     "Reference table" => "reference-table.md",
     "Closures" => "closures.md",
+    "API Reference" => "api.md",
 ]
 
 makedocs(;
