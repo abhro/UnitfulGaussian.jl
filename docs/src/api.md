@@ -15,8 +15,8 @@ UnitfulGaussian.statH
 ## Equivalences
 ```@docs
 ChargeEquivalence
-ElectricFluxEquivalence
 ElectricFieldEquivalence
+ElectricFluxEquivalence
 PotentialEquivalence
 MagneticFieldEquivalence
 MagneticFluxEquivalence
