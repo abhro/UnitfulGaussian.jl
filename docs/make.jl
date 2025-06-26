@@ -10,7 +10,7 @@ links = InterLinks(
 
 pages = [
     "Home" => "index.md",
-    "Reference table" => "reference-table.md",
+    "Reference table of Gaussian and SI Units" => "reference-table.md",
     "Closures" => "closures.md",
     "API Reference" => "api.md",
 ]
