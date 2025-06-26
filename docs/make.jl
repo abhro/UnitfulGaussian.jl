@@ -13,8 +13,7 @@ bib = CitationBibliography(joinpath(@__DIR__, "src", "refs.bib"), style = :autho
 
 pages = [
     "Home" => "index.md",
-    "Reference table of Gaussian and SI Units" => "reference-table.md",
-    "Closures" => "closures.md",
+    "Tables of Gaussian and SI Units" => "reference-table.md",
     "API Reference" => "api.md",
 ]
 
