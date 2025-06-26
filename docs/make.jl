@@ -1,12 +1,15 @@
 using UnitfulGaussian
 using Documenter
 using DocumenterInterLinks
+using DocumenterCitations
 
 DocMeta.setdocmeta!(UnitfulGaussian, :DocTestSetup, :(using UnitfulGaussian); recursive=true)
 
 links = InterLinks(
     "Unitful" => "https://painterqubits.github.io/Unitful.jl/stable/objects.inv",
 )
+
+bib = CitationBibliography(joinpath(@__DIR__, "src", "refs.bib"), style = :authoryear)
 
 pages = [
     "Home" => "index.md",
@@ -24,7 +27,7 @@ makedocs(;
         assets = String[],
     ),
     pages,
-    plugins = [links],
+    plugins = [links, bib],
 )
 
 deploydocs(;

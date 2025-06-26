@@ -634,4 +634,6 @@ table td:last-child, table th:last-child { border-right: none !important; }
 
 ## Sources
 
-TODO
+```@bibliography
+cardarelli2003
+```
