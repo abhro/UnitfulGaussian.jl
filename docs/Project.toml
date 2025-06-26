@@ -2,6 +2,7 @@
 Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
 DocumenterCitations = "daee34ce-89f3-4625-b898-19384cb65244"
 DocumenterInterLinks = "d12716ef-a0f6-4df4-a9f1-a5a34e75c656"
+Unitful = "1986cc42-f94f-5a68-af5c-568840ba703d"
 UnitfulGaussian = "203183ea-d3ea-452b-8588-590cbae10604"
 
 [sources]
