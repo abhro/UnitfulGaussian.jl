@@ -10,7 +10,7 @@ using UnitfulGaussian: qcgs, Fr, G, statA, statV, Oe, Mx
     end
 
     @testset "Test elementary charge" begin
-        @test uconvert(Fr, q, ChargeEquivalence()) ≈ 4.803204e-10Fr rtol=1e-6
+        @test qcgs ≈ 4.8032047126e-10Fr
     end
 
     @testset "Test Coulomb's law" begin
@@ -63,8 +63,8 @@ using UnitfulGaussian: qcgs, Fr, G, statA, statV, Oe, Mx
         @test uconvert(Oe, 1A/m, MagneticFieldEquivalence()) ≈ 0.012566370614359173Oe
         @test uconvert(A/m, 1Oe, MagneticFieldEquivalence()) ≈ 79.57747154594766A/m
 
-        @test uconvert(Mx, 1Wb, MagneticFluxEquivalence()) ≈ (10^8)Mx
-        @test uconvert(Wb, 1Mx, MagneticFluxEquivalence()) ≈ (10^-8)Wb
+        @test uconvert(Mx, 1Wb, MagneticFluxEquivalence()) == 1e8Mx
+        @test uconvert(Wb, 1Mx, MagneticFluxEquivalence()) ≈ 1e-8Wb
 
         @test 1erg/cm^3 == 1G^2
 
