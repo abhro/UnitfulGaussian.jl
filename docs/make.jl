@@ -6,7 +6,7 @@ using DocumenterCitations
 DocMeta.setdocmeta!(UnitfulGaussian, :DocTestSetup, :(using UnitfulGaussian); recursive=true)
 
 links = InterLinks(
-    "Unitful" => "https://painterqubits.github.io/Unitful.jl/stable/objects.inv",
+    "Unitful" => "https://juliaphysics.github.io/Unitful.jl/stable/objects.inv",
 )
 
 bib = CitationBibliography(joinpath(@__DIR__, "src", "refs.bib"), style = :authoryear)
