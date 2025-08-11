@@ -1,7 +1,7 @@
 name = "UnitfulGaussian"
 uuid = "203183ea-d3ea-452b-8588-590cbae10604"
 authors = ["Abhro R. and contributors"]
-version = "0.0.0"
+version = "0.1.0"
 
 [deps]
 Unitful = "1986cc42-f94f-5a68-af5c-568840ba703d"
