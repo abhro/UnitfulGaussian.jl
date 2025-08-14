@@ -8,11 +8,17 @@ Extension to [Unitful.jl](https://github.com/PainterQubits/Unitful.jl) with supp
 
 ## Installation
 
-UnitfulGaussian.jl is not yet available in the Julia General registry, so you'll need to add it from this repository. In the Julia REPL, type the following:
+In the Julia REPL, type the following to install UnitfulGaussian.jl and Unitful.jl (recommended):
 
 ```julia
 julia> ] # type `]` to drop into pkg-mode
-pkg> add https://github.com/abhro/UnitfulGaussian.jl
+pkg> add UnitfulGaussian
+```
+
+Alternatively, you can also use Pkg.jl's `add()` function:
+```julia
+import Pkg
+Pkg.add(["UnitfulGaussian", "Unitful"])
 ```
 
 For more information about the package, please visit our documentation site (link in the "About" section)
