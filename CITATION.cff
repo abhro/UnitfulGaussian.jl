@@ -1,9 +1,8 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
-authors:
-  - family-names: R.
-    given-names: Abhro
 title: "UnitfulGaussian.jl"
-version: 0.1.0
-identifiers:
-date-released: 2024-11
+license: MIT
+authors:
+  - given-names: Abhro
+repository-code: "https://github.com/abhro/UnitfulGaussian.jl"
+type: software
