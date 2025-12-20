@@ -1,6 +1,7 @@
 # UnitfulGaussian
 
-[![Documentation](https://img.shields.io/badge/docs-dev-blue.svg)](https://abhro.github.io/UnitfulGaussian.jl/dev)
+[![Documentation (stable version)](https://img.shields.io/badge/docs-stable-blue.svg)](https://abhro.github.io/UnitfulGaussian.jl/stable)
+[![Documentation (developer version)](https://img.shields.io/badge/docs-dev-blue.svg)](https://abhro.github.io/UnitfulGaussian.jl/dev)
 [![Build Status](https://github.com/abhro/UnitfulGaussian.jl/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/abhro/UnitfulGaussian.jl/actions/workflows/CI.yml?query=branch%3Amain)
 [![Codecov Coverage](https://codecov.io/gh/abhro/UnitfulGaussian.jl/branch/main/graph/badge.svg)](https://codecov.io/gh/abhro/UnitfulGaussian.jl)
 
@@ -21,4 +22,4 @@ import Pkg
 Pkg.add(["UnitfulGaussian", "Unitful"])
 ```
 
-For more information about the package, please visit our documentation site (link in the "About" section)
+For more information about the package, please visit our documentation site, whose link in the "About" section, or following one of the badges at the top of this README page.
