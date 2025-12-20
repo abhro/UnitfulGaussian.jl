@@ -11,7 +11,7 @@ In the REPL, type
 
 ```julia-repl
 julia> ]
-pkg> add https://github.com/abhro/UnitfulGaussian.jl
+pkg> add UnitfulGaussian
 ```
 
 ## Examples
