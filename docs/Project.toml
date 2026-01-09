@@ -12,3 +12,5 @@ UnitfulGaussian = {path = ".."}
 Documenter = "1"
 DocumenterCitations = "1"
 DocumenterInterLinks = "1"
+Unitful = "1.27.0"
+UnitfulGaussian = "0.1.1"
