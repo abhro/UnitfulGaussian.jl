@@ -1,4 +1,4 @@
-name: Downgrade tests
+name: Downgrade
 on:
   push:
     branches: [main]
@@ -13,7 +13,7 @@ concurrency:
   cancel-in-progress: ${{ startsWith(github.ref, 'refs/pull/') }}
 
 jobs:
-  test:
+  downgrade-test:
     name: Downgrade tests - Julia ${{ matrix.julia-version }} - ${{ github.event_name }}
     runs-on: ubuntu-latest
     strategy:
