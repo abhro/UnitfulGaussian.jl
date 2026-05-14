@@ -8,9 +8,10 @@ export @u_str
 
 function __init__()
     Unitful.register(UnitfulGaussian)
+    return
 end
 
-#       symbol  abbrev.     name        equals          tf     autodocs
+#       symbol  abbrev.     name        equals            tf     autodocs
 """
     UnitfulGaussian.Fr
 
@@ -20,7 +21,7 @@ Dimension: 𝐌^1/2 𝐋^3/2 𝐓^-1.
 
 See also: [`Unitful.C`](@extref)
 """
-@unit   Fr      "Fr"        franklin    1sqrt(dyn)*cm   false
+@unit   Fr      "Fr"        franklin    1√dyn * cm        false
 """
     UnitfulGaussian.statA
 
@@ -30,7 +31,7 @@ Dimension: 𝐌^1/2 𝐋^3/2 𝐓^-2.
 
 See also: [`Unitful.A`](@extref)
 """
-@unit   statA   "statA"     statA       1Fr/s           false
+@unit   statA   "statA"     statA       1Fr / s           false
 """
     UnitfulGaussian.statV
 
@@ -40,7 +41,7 @@ Dimensions: 𝐌^1/2 𝐋^1/2 𝐓^-1.
 
 See also: [`Unitful.V`](@extref)
 """
-@unit   statV   "statV"     statvolt    1erg/Fr         false
+@unit   statV   "statV"     statvolt    1erg / Fr         false
 """
     UnitfulGaussian.Mx
 
@@ -55,7 +56,7 @@ See also: [`Unitful.Wb`](@extref)
     Unitful.jl also defines a maxwell as 10⁻⁸ Wb. This is not dimensionally
     equivalent to the unit described here.
 """
-@unit   Mx      "Mx"        maxwell     1sqrt(cm^3*g)/s false
+@unit   Mx      "Mx"        maxwell     1√(cm^3 * g) / s  false
 """
     UnitfulGaussian.G
 
@@ -69,7 +70,7 @@ See also: [`Unitful.T`](@extref)
     Unitful.jl also defines a gauss as a 10⁻⁴ T. This is not dimensionally
     equivalent to the unit described here.
 """
-@unit   G       "G"         gauss       1Mx/cm^2        false
+@unit   G       "G"         gauss       1Mx / cm^2        false
 """
     UnitfulGaussian.Oe
 
@@ -85,7 +86,7 @@ See also: [`Unitful.A`](@extref)
     Unitful.jl also defines a oersted as 1000/4π A/m. This is not dimensionally
     equivalent to the unit described here.
 """
-@unit   Oe      "Oe"        oersted     1dyn/Mx         false
+@unit   Oe      "Oe"        oersted     1dyn / Mx         false
 """
     UnitfulGaussian.statF
 
@@ -106,7 +107,7 @@ Dimensions: 𝐋^-1 𝐓^2
 
 See also: [`Unitful.H`](@extref)
 """
-@unit   statH   "statH"     stathenry   1statV*s^2/Fr   false
+@unit   statH   "statH"     stathenry   1statV * s^2 / Fr   false
 
 include("equivalences.jl")
 

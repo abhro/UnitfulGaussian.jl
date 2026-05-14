@@ -3,7 +3,7 @@ using Documenter
 using DocumenterInterLinks
 using DocumenterCitations
 
-DocMeta.setdocmeta!(UnitfulGaussian, :DocTestSetup, :(using UnitfulGaussian); recursive=true)
+DocMeta.setdocmeta!(UnitfulGaussian, :DocTestSetup, :(using UnitfulGaussian); recursive = true)
 
 links = InterLinks(
     "Unitful" => "https://juliaphysics.github.io/Unitful.jl/stable/objects.inv",
