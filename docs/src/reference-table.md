@@ -409,12 +409,15 @@ table td:last-child, table th:last-child { border-right: none !important; }
   <td rowspan="2">Magnetization, <strong>M</strong>, 4π<strong>M</strong></td>
   <td class="nowrap">A/m</td>
   <td class="nowrap"></td>
-  <td colspan="2" class="nowrap">erg/(G⋅cm<sup>3</sup>)</td>
+  <td colspan="2">
+    <span class="nowrap">erg/(G⋅cm<sup>3</sup>)</span>
+    <span class="nowrap">= g<sup>1/2</sup> cm<sup>−1/2</sup> s<sup>−1</sup></span>
+  </td>
 </tr>
 <tr class="even">
   <td class="dimensions">L<sup>−1</sup> I</td>
   <td class="dimensions"></td>
-  <td class="dimensions" colspan="2"></td>
+  <td class="dimensions" colspan="2">M<sup>1/2</sup> L<sup>−1/2</sup> T<sup>−1</sup></td>
 </tr>
 <tr class="odd" id="permeability">
   <td rowspan="2">Magnetic permeability, <em>μ</em></td>
@@ -436,7 +439,7 @@ table td:last-child, table th:last-child { border-right: none !important; }
 <tr class="even">
   <td class="dimensions">I</td>
   <td class="dimensions"></td>
-  <td class="dimensions" colspan="2"></td>
+  <td class="dimensions" colspan="2">M<sup>1/2</sup> L<sup>1/2</sup> T<sup>−1</sup></td>
 </tr>
 <tr class="odd" id="magnetic-reluctance">
   <td rowspan="2">Magnetic reluctance, <em>ℛ</em></td>
@@ -447,7 +450,7 @@ table td:last-child, table th:last-child { border-right: none !important; }
 <tr class="even">
   <td class="dimensions">M<sup>−1</sup> L<sup>−2</sup> T<sup>2</sup> I<sup>2</sup></td>
   <td class="dimensions"></td>
-  <td class="dimensions" colspan="2"></td>
+  <td class="dimensions" colspan="2">L<sup>−1</sup></td>
 </tr>
 </tbody>
 </table>
@@ -477,12 +480,16 @@ table td:last-child, table th:last-child { border-right: none !important; }
     <span class="nowrap">statfarad (statF)</span>
     <span class="nowrap">= cm</span>
   </td>
-  <td class="nowrap">abfarad (abF)</td>
+  <td>
+    <span class="nowrap">abfarad (abF)</span>
+    <span class="nowrap">= abC/abV</span>
+    <span class="nowrap">= cm<sup>−1</sup> s<sup>−2</sup></span>
+  </td>
 </tr>
 <tr class="even">
   <td class="dimensions">M<sup>−1</sup> L<sup>−2</sup> T<sup>4</sup> I<sup>2</sup></td>
   <td class="dimensions" colspan="2">L</td>
-  <td class="dimensions"></td>
+  <td class="dimensions">L<sup>−1</sup> T<sup>−2</sup></td>
 </tr>
 <tr class="odd" id="inductance">
   <td rowspan="2">Inductance, <em>L</em></td>
@@ -535,7 +542,7 @@ table td:last-child, table th:last-child { border-right: none !important; }
     <span class="nowrap">= kg<sup>−1</sup> m<sup>−2</sup> s<sup>3</sup> A<sup>2</sup></span>
   </td>
   <td colspan="2" class="nowrap">cm/s</td>
-  <td></td>
+  <td>absiemens = abmho</td>
 </tr>
 <tr class="even">
   <td class="dimensions">M<sup>−1</sup> L<sup>−2</sup> T<sup>3</sup> I<sup>2</sup></td>
@@ -594,4 +601,5 @@ the system of electromagnetic equations.
 
 ```@bibliography
 cardarelli2003
+graf1999
 ```
